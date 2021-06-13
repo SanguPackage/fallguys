@@ -1,0 +1,8 @@
+{% assign crownlevel = include.crownlevel %}
+{% if crownlevel.type == 'nickname' %}
+
+{% elsif crownlevel.type == 'colour' %}
+    <div class="crown-reward-colour" style="background: linear-gradient(315deg, {{ crownlevel.secondary }} 33%, {{ crownlevel.primary }} 33%);"></div>
+{% else %}
+    <img src="{{ site.baseurl }}/img/crown-level-rewards/level-{{ crownlevel.level }}-{{ crownlevel.type }}-{{ crownlevel.name | downcase | replace: ' ', '-' }}.png">
+{% endif %}

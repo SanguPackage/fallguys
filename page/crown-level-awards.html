@@ -1,0 +1,30 @@
+---
+layout: page
+title: Crown Level Awards
+permalink: /crown-level-awards
+---
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Level</th>
+            <th>Name</th>
+            <th>Reward</th>
+            <th>Crowns</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% assign crownlevels = site.data.crownlevels | reverse %}
+        {% for cl in crownlevels %}
+            <tr>
+                <td>{{ cl.level }}</td>
+                <td>{{ cl.name }}</td>
+                <td>{% include crown-reward.html crownlevel=cl %}</td>
+                <td>
+                    <img src="{{ site.baseurl }}/img/crown.png" style="padding-right: 6px">
+                    {{ cl.crowns }}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
