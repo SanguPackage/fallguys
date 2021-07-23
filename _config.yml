@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Fall Guys @ Sangu
 meta-description:
-meta-keywords: fallguys fall guys tips tricks shortcuts short movies crown level awards
+meta-keywords: fallguys fall guys tips tricks shortcuts short movies crown level rewards
 name: fallguys
 description: > # this means to ignore newlines until "baseurl:"
 
@@ -34,6 +34,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:categories/:title/
+  pages:
+    output: true
+    permalink: /:title
 
 # Build settings
 markdown: kramdown
