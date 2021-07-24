@@ -1,0 +1,38 @@
+---
+layout: page
+title: Crown Level Rewards
+permalink: /crown-level-rewards
+---
+
+<div class="col">
+    {% include crown-reward-filters.html current='cards' %}
+
+    <table class="table table-striped table-bordered table-hover crown-rewards">
+        <thead>
+            <tr>
+                <th style="width: 300px">Rank</th>
+                <th>Reward</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign crownlevels = site.data.crownlevels | reverse %}
+            {% for cl in crownlevels %}
+            <tr class="{{ cl.type }}">
+                <td>
+                    <div class="reward-name">{{ cl.name }}</div>
+                    Level {{ cl.level }}
+
+                    {% include crown-reward-type.html type=cl.type %}
+
+                    <br />
+                    <br />
+
+                    <img src="{{ site.baseurl }}/img/crown.png" style="padding-right: 6px">
+                    <span class="crown-count">{{ cl.crowns }}</span>
+                </td>
+                <td>{% include crown-reward.html crownlevel=cl %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

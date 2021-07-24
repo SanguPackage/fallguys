@@ -1,0 +1,5 @@
+---
+---
+level;name;type;crowns;next;rarity;color1;color2
+{% for cl in site.data.crownlevels %}{{ cl.level }};{{ cl.name }};{{ cl.type }};{{ cl.crowns }};{{ cl.next }};{{ cl.rarity }};{% if cl.type == 'colour' %}{{ cl.primary }};{{ cl.secondary }}{% endif %}
+{% endfor %}

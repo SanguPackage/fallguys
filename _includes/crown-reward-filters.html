@@ -1,0 +1,27 @@
+<div style="margin-bottom: 8px">
+    <div class="crown-rewards-filters" style="display: inline">
+        <button type="button" class="btn btn-light" data-type="upper">Upper</button>
+        <button type="button" class="btn btn-light" data-type="lower">Lower</button>
+        <button type="button" class="btn btn-light" data-type="pattern">Patterns</button>
+        <button type="button" class="btn btn-light" data-type="colour">Colours</button>
+        <button type="button" class="btn btn-light" data-type="faceplate">Faceplate</button>
+        <button type="button" class="btn btn-light" data-type="banner">Banners</button>
+        <button type="button" class="btn btn-light" data-type="nickname">Nicknames</button>
+    </div>
+
+    <div style="float: right">
+        {% if include.current == 'cards' %}
+            <a href="{{ site.baseurl }}/crown-level-rewards-table.html" class="btn btn-dark" title="Go to Table view">
+                <i class="fa fa-table"></i> Table Version
+            </a>
+        {% else %}
+            <a href="{{ site.baseurl }}/crown-level-rewards.html" class="btn btn-dark"title="Go back to Cards view">
+                <i class="fa fa-arrow-left"></i></i> Cards Version
+            </a>
+        {% endif %}
+
+        <a href="{{ site.baseurl }}/assets/crown-level-rewards.csv" class="btn btn-dark" title="Download CSV of the crown rewards data">
+            <i class="fa fa-file-excel"></i>
+        </a>
+    </div>
+</div>

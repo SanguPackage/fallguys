@@ -2,7 +2,13 @@
 {% if crownlevel.type == 'nickname' %}
 
 {% elsif crownlevel.type == 'colour' %}
-    <div class="reward-colour" style="background: linear-gradient(315deg, {{ crownlevel.secondary }} 33%, {{ crownlevel.primary }} 33%);"></div>
+    <div class="reward-colour {{ include.size | replace: '-', '' }}" style="background: linear-gradient(315deg, {{ crownlevel.secondary }} 33%, {{ crownlevel.primary }} 33%);"></div>
 {% else %}
-    <img src="{{ site.baseurl }}/img/crown-level-rewards/level-{{ crownlevel.level }}-{{ crownlevel.type }}-{{ crownlevel.name | downcase | replace: ' ', '-' }}.png">
+    {% assign imgName = 'level-' | append: crownlevel.level | append: '-' | append: crownlevel.type | append: '-' %}
+    {% assign imgName = imgName | append: crownlevel.name | downcase | replace: ' ', '-' %}
+    {% if include.size == 'sm' %}
+        {% assign imgName = imgName | append: '-sm' %}
+    {% endif %}
+
+    <img src="{{ site.baseurl }}/img/crown-level-rewards/{{ imgName }}.png">
 {% endif %}
