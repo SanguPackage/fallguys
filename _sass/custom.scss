@@ -6,6 +6,11 @@
         border-radius: 15%;
         border: 0;
         padding: 0;
+
+        &.sm {
+            width: 3em;
+            height: 3em;
+        }
     }
 
     .reward-name {
