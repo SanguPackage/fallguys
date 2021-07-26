@@ -1,0 +1,77 @@
+---
+layout: level
+title: Hoverboard Heroes
+permalink: /levels/hoverboard-heroes
+---
+
+{% assign level = site.data.levels | where: 'name', page.title | first %}
+{% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
+
+<h1 class="levels">
+    {{ level.name }}
+    <small style="font-size: 0.5em">{% include level/level-type.html type=level.type %}</small>
+</h1>
+
+
+
+<div class="row">
+    <h4>Our Verdict</h4>
+    <div>Score lao: {{ level.score.lao }}%</div>
+    {% if level.score.squads %}
+        <div>Score Squads: {{ level.score.squads }}%</div>
+    {% endif %}
+    {% if level.score.variant %}
+        <div>Score Variants: {{ level.score.variant }}%</div>
+    {% endif %}
+
+    {{ level.verdict }}
+</div>
+
+
+
+<div class="row">
+    <div class="col">
+        <h2>Flyby</h2>
+        {% assign fileName = '/levels/' | append: key | append: '.png' %}
+        {% include level/level-flyby.html file=fileName desc=level.objective id="CjTUDY2LGLI" %}
+    </div>
+    <div class="col">
+        <h2>Speedrun</h2>
+        {% include post/youtube.html id="WLEes6UFXEg" desc="Speedruns on Hoverboard Heroes might not be a thing ;)" %}
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <h2>Start</h2>
+        Pretty straight forward, you don't actually need to jump over the Light Rods or anything.
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col">
+        <h2>Platform 1</h2>
+        Don't try to jump onto the platform too soon. Those pesky developers made the landing platform transparent,
+        one would think especially to mislead beans.
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Jump & Dive</button>
+            <button type="button" class="btn btn-light">Jump & Grab</button>
+            <button type="button" class="btn btn-light">Go Around</button>
+        </div>
+
+        <div class="platform1-jump-dive">
+            {% include post/youtube.html id="gRaOnee1r9w" desc="A bit dangerous for other beans could bump you into the flippers on the side and into the slime." %}
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2>Griefing</h2>
+
+{% include post/youtube.html id="gRaOnee1r9w" desc="Standing near the rear of the hoverboard is a risky endeavor" %}

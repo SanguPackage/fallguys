@@ -23,9 +23,86 @@
     }
 }
 
+.level-detail {
+    .flybywrapper {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: relative;
 
+        img {
+            cursor: pointer;
+        }
 
-a.rss-link, a.rss-link:link, a.rss-link:visited, a.rss-link:hover, a.rss-link:active {
-  margin-left: 6px;
-  color: #E74600;
+        .flyby-btn {
+            font-size: 36px;
+            color: #2EC8EA;
+            cursor: pointer;
+
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            left: 50%;
+            top: 50%;
+            margin-left: -48px; /*half of the width */
+            margin-top: -48px; /*half of the height */
+
+            &:hover {
+                color: lighten(#2EC8EA, 20%);
+            }
+        }
+    }
+
+    .videoContainer {
+        position: relative;
+    }
+    .playBtn {
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        left: 50%;
+        top: 50%;
+        margin-left: -48px; /*half of the width */
+        margin-top: -48px; /*half of the height */
+    }
+}
+
+.levels {
+    .level-badge {
+        text-shadow: black 1px 1px;
+        font-weight: bold;
+        padding: 0.25em 1em;
+        border-radius: 1em;
+        text-transform: uppercase;
+
+        &.race {
+            background: #05e06d;
+            color: white;
+        }
+
+        &.survival {
+            background: #b61bd2;
+            color: white;
+        }
+
+        &.hunt {
+            background: #3065b8;
+            color: white;
+        }
+
+        &.logic {
+            background: #009999;
+            color: white;
+        }
+
+        &.team {
+            background: #f55303;
+            color: white;
+        }
+
+        &.final {
+            background: #f9c503;
+            color: white;
+        }
+    }
 }

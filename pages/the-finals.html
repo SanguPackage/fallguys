@@ -1,0 +1,72 @@
+---
+layout: page
+title: The Finals
+permalink: /the-finals
+---
+
+<div class="col levels">
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th style="width: 50px">Level</th>
+                <th>&nbsp;</th>
+                <th>Type</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign levels = site.data.levels | where: 'type', 'final'| sort: 'sort_score' | reverse %}
+            {% for level in levels %}
+                {% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
+                <tr>
+                    <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
+                    <td>
+                        <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        <p>{{ level.howto }}</p>
+                    </td>
+                    <td>{% include level/level-type.html type=level.type %}</td>
+                    <td>{{ level.sort_score }}%</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+<h2>Squad finals</h2>
+
+{% assign levels = '' | split: '' %}
+{% for level in site.data.levels %}
+    {% if level.type == 'team' and level.qualify == 50 %}
+        {% assign levels = levels | push: level %}
+    {% endif %}
+{% endfor %}
+
+<div class="col levels">
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th style="width: 50px">Level</th>
+                <th>&nbsp;</th>
+                <th>Type</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign levels = levels | sort: 'final_score' | reverse %}
+            {% for level in levels %}
+            {% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
+                <tr>
+                    <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
+                    <td>
+                        <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        <p>{{ level.howto }}</p>
+                    </td>
+                    <td>{% include level/level-type.html type=level.type %}</td>
+                    <td>{{ level.final_score }}%</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

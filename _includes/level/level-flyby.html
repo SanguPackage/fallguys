@@ -1,0 +1,19 @@
+<!-- <figure class="imagewrapper flybywrapper">
+    <img src="{{ site.baseurl }}/img/{{ include.file }}" alt="Official Level Photo" title="Click to start the flyby" class="flyby">
+    <i class="fa fa-play flyby-btn" title="Click to start the flyby"></i>
+
+    {% if include.desc %}
+        <figcaption>{{ include.desc }}</figcaption>
+    {% endif %}
+</figure> -->
+
+<figure class="youtubemovie flyby-movie">
+    <div class="iframewrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    {% if include.desc %}
+        <figcaption>{{ include.desc }}</figcaption>
+    {% endif %}
+</figure>

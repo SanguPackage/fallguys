@@ -1,0 +1,41 @@
+---
+layout: page
+title: The Levels
+permalink: /the-levels
+---
+
+{% assign levels = '' | split: '' %}
+{% for level in site.data.levels %}
+    {% if level.type != 'final' %}
+        {% assign levels = levels | push: level %}
+    {% endif %}
+{% endfor %}
+
+
+<div class="col levels">
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th style="width: 50px">Level</th>
+                <th>&nbsp;</th>
+                <th>Type</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign levels = levels | sort: 'sort_score' | reverse %}
+            {% for level in levels %}
+                {% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
+                <tr>
+                    <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
+                    <td>
+                        <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        <p>{{ level.howto }}</p>
+                    </td>
+                    <td>{% include level/level-type.html type=level.type %}</td>
+                    <td>{{ level.sort_score }}%</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
