@@ -21,7 +21,11 @@ permalink: /the-finals
                 <tr>
                     <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
                     <td>
-                        <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        {% if level.exists %}
+                            <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        {% else %}
+                            {{ level.name }}
+                        {% endif %}
                         <p>{{ level.howto }}</p>
                     </td>
                     <td>{% include level/level-type.html type=level.type %}</td>
@@ -60,7 +64,11 @@ permalink: /the-finals
                 <tr>
                     <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
                     <td>
-                        <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        {% if level.exists %}
+                            <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+                        {% else %}
+                            {{ level.name }}
+                        {% endif %}
                         <p>{{ level.howto }}</p>
                     </td>
                     <td>{% include level/level-type.html type=level.type %}</td>

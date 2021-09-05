@@ -11,6 +11,7 @@
 
 
 - name: Dizzy Heights
+  exists: true
   type: race
   sort_score: 70
   score:
@@ -92,6 +93,7 @@
 
 
 - name: Lily Leapers
+  exists: true
   type: race
   sort_score: 86
   score:
@@ -114,6 +116,7 @@
 
 
 - name: See Saw
+  exists: true
   type: race
   sort_score: 68
   score:
@@ -147,6 +150,7 @@
 
 
 - name: Skyline Stumble
+  exists: false
   type: race
   sort_score: 60
   score:
@@ -158,10 +162,10 @@
   verdict: >
     A fun starter level.
   timeout: ??
-  fallguystv: na
 
 
 - name: Slime Climb
+  exists: true
   type: race
   sort_score: 100
   score:
@@ -174,6 +178,7 @@
 
 
 - name: The Slimescraper
+  exists: true
   type: race
   sort_score: 98
   score:
@@ -185,6 +190,7 @@
 
 
 - name: The Whirlygig
+  exists: true
   type: race
   sort_score: 87
   score:
@@ -268,6 +274,7 @@
 
 
 - name: Hoverboard Heroes
+  exists: true
   type: survival
   sort_score: 90
   score:
@@ -279,6 +286,7 @@
 
 
 - name: Jump Club
+  exists: true
   type: survival
   sort_score: 60
   score:
@@ -313,6 +321,7 @@
 
 
 - name: Stompin' Ground
+  exists: true
   type: survival
   sort_score: 78
   score:
@@ -380,6 +389,7 @@
 
 
 - name: Perfect Match
+  exists: true
   type: logic
   sort_score: 40
   score:
@@ -405,6 +415,7 @@
 
 
 - name: Egg Scramble
+  exists: true
   type: team
   sort_score: 60
   score:
@@ -544,6 +555,7 @@
 
 
 - name: Fall Mountain
+  exists: true
   type: final
   sort_score: 80
   score:
@@ -582,6 +594,7 @@
   qualify: 1
   added: 1
   fallguystv: https://www.youtube.com/watch?v=JzdPuBWNdlQ
+  timeout: 5:00
 
 
 - name: Lost Temple
@@ -609,6 +622,7 @@
 
 
 - name: Royal Fumble
+  exists: true
   type: final
   sort_score: 90
   score:

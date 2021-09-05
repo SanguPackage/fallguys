@@ -1,6 +1,79 @@
 ---
 layout: default
 ---
+
+
+<!--
+Tip Toe: FNcr0zq3bUg Thicc Bonkus variant
+
+Snowy Scrap: Wt_oWdvVxUo golden middle
+-->
+
+
+
+
+
 <div class="container level-detail">
+    {% assign level = site.data.levels | where: 'name', page.title | first %}
+    {% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
+
+    <h1 class="levels">
+        {{ level.name }}
+        <small style="font-size: 0.5em">{% include level/level-type.html type=level.type %}</small>
+    </h1>
+
+    <div class="row">
+        <h4>Our Verdict</h4>
+        <div>Score: {{ level.score.lao }}%</div>
+        {% if level.score.squads %}
+        <div>Score Squads: {{ level.score.squads }}%</div>
+        {% endif %}
+        {% if level.score.variant %}
+        <div>Score Variants: {{ level.score.variant }}%</div>
+        {% endif %}
+
+        {{ level.verdict }}
+    </div>
+
+    {% if level.fallguystv %}
+        <div class="alert alert-success">
+            <a href="{{ level.fallguystv }}" style="float: left; margin-right: 12px; border: 1px solid black; margin-top: 4px" target="_blank" title="Check the {{ level.name }} Video now!">
+                <img src="{{ site.baseurl }}/img/fallguystv.jpg">
+            </a>
+
+            For the first seasons there was <a href="https://www.youtube.com/channel/UCh5wGt6syAvYzEennj8rpwQ/featured" target="_blank">Fall Guys TV</a>
+            with very nicely crafted videos explaining us how to win.
+            <br>
+            While the content is now somewhat dated, those videos remain gold.
+            <br><br>
+            <b>Click on the Fall Guys TV logo to see the video of {{ level.name }} now!</b>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="row">
+        {% if page.flyby %}
+            <div class="col">
+                <h2>Flyby</h2>
+                {% assign fileName = '/levels/' | append: key | append: '.png' %}
+                {% include level/level-flyby.html file=fileName desc=level.objective id=page.flyby %}
+            </div>
+        {% endif %}
+
+        {% if page.speedrun.youtube %}
+            <div class="col">
+                <h2>Speedrun</h2>
+                {% assign desc = page.speedrun.desc %}
+                {% if page.speedrun.time %}
+                    {% assign desc = desc | append: '(' | append: page.speedrun.time | append: ')' %}
+                {% endif %}
+                {% include post/youtube.html id=page.speedrun.youtube desc=desc %}
+            </div>
+        {% endif %}
+    </div>
+
     {{ content }}
 </div>

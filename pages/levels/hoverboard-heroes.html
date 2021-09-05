@@ -2,50 +2,32 @@
 layout: level
 title: Hoverboard Heroes
 permalink: /levels/hoverboard-heroes
+
+flyby: CjTUDY2LGLI
+speedrun:
+  youtube: n3xNZefSzAQ
+  desc: Speedruns on Hoverboard Heroes might not be a thing ;)
+
+missing:
+  - Canons + Fan
 ---
 
 {% assign level = site.data.levels | where: 'name', page.title | first %}
 {% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
 
-<h1 class="levels">
-    {{ level.name }}
-    <small style="font-size: 0.5em">{% include level/level-type.html type=level.type %}</small>
-</h1>
-
-
-
-<div class="row">
-    <h4>Our Verdict</h4>
-    <div>Score lao: {{ level.score.lao }}%</div>
-    {% if level.score.squads %}
-        <div>Score Squads: {{ level.score.squads }}%</div>
-    {% endif %}
-    {% if level.score.variant %}
-        <div>Score Variants: {{ level.score.variant }}%</div>
-    {% endif %}
-
-    {{ level.verdict }}
-</div>
-
-
-
 <div class="row">
     <div class="col">
-        <h2>Flyby</h2>
-        {% assign fileName = '/levels/' | append: key | append: '.png' %}
-        {% include level/level-flyby.html file=fileName desc=level.objective id="CjTUDY2LGLI" %}
-    </div>
-    <div class="col">
-        <h2>Speedrun</h2>
-        {% include post/youtube.html id="WLEes6UFXEg" desc="Speedruns on Hoverboard Heroes might not be a thing ;)" %}
-    </div>
-</div>
+        <div class="row">
+            <div class="col">
+                <h2>Start</h2>
+                {% include post/youtube.html id="hc1i1_ZcKAQ" desc="Pretty straight forward, you don't actually need to jump over the Light Rods or anything." %}
+            </div>
 
-
-<div class="row">
-    <div class="col">
-        <h2>Start</h2>
-        Pretty straight forward, you don't actually need to jump over the Light Rods or anything.
+            <div class="col">
+                <h2>Canons</h2>
+                {% include post/youtube.html id="tacHfg4bh5g" desc="Keep close to the canons, chances are that even if something hits you, you'll remain on the hoverboard." %}
+            </div>
+        </div>
     </div>
 </div>
 
@@ -55,16 +37,58 @@ permalink: /levels/hoverboard-heroes
     <div class="col">
         <h2>Platform 1</h2>
         Don't try to jump onto the platform too soon. Those pesky developers made the landing platform transparent,
-        one would think especially to mislead beans.
+        one would think especially to mislead beans. Also watch out out for grabbers as you make the jump.
+
+        {% include post/youtube.html id="bALYLlk-ZUw" desc="You can see the hoverboard passing on the sides, best not jump off the platform before!" %}
+
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col">
+        <h2>Platform 2</h2>
 
         <div class="btn-group">
-            <button type="button" class="btn btn-secondary">Jump & Dive</button>
-            <button type="button" class="btn btn-light">Jump & Grab</button>
-            <button type="button" class="btn btn-light">Go Around</button>
+            <button type="button" class="btn btn-secondary" data-id="platform2-easy">Easy</button>
+            <button type="button" class="btn btn-light" data-id="platform2-tricky">Tricky</button>
+            <button type="button" class="btn btn-light" data-id="platform2-alt-swinging-axe">Swinging Axes</button>
+            <button type="button" class="btn btn-light" data-id="platform2-alt-rotating-hammers">Rotating Hammers</button>
         </div>
 
-        <div class="platform1-jump-dive">
-            {% include post/youtube.html id="gRaOnee1r9w" desc="A bit dangerous for other beans could bump you into the flippers on the side and into the slime." %}
+        <div class="platform2-easy">
+            <div class="row">
+                <div class="col">
+                    {% include post/youtube.html id="BKUHjBylTEc" desc="The easy way" %}
+                </div>
+
+                <div class="col">
+                    {% include post/youtube.html id="-Nk-jhA0BDs" desc="Jump over slime? Watch out!" %}
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden platform2-tricky">
+            <div class="row">
+                <div class="col">
+                    {% include post/youtube.html id="H0LWmo9Y55Q" desc="The tricky way - mistime this one and get slimed" %}
+                </div>
+
+                <div class="col">
+                    {% include post/youtube.html id="z5h4GYK_f1A" desc="Not sure if such save is a thing :)" %}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="hidden platform2-alt-swinging-axe">
+            {% include post/youtube.html id="Gml8OtiHjAU" desc="Alternative route as the Swinging Axes are a bit harder to avoid" %}
+        </div>
+
+        <div class="hidden platform2-alt-rotating-hammers">
+            {% include post/youtube.html id="Ngq0cKeEafg" desc="If you miss the jump, the Rotating Hammers below can be a bit tricky" %}
         </div>
     </div>
 </div>
@@ -72,6 +96,66 @@ permalink: /levels/hoverboard-heroes
 
 
 
-<h2>Griefing</h2>
+<div class="row">
+    <div class="col">
+        <h2>Final Obstacle(s)</h2>
 
-{% include post/youtube.html id="gRaOnee1r9w" desc="Standing near the rear of the hoverboard is a risky endeavor" %}
+        <div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary" data-id="final-light-swingers">Light Swingers</button>
+                <button type="button" class="btn btn-light" data-id="final-thicc-bonkus">Thicc Bonkus</button>
+                <button type="button" class="btn btn-light" data-id="final-alt-light-swinger">Alt Light Swinger</button>
+                <button type="button" class="btn btn-light" data-id="final-blizzard-fans">Blizzard Fans</button>
+            </div>
+
+            <div class="final-light-swingers">
+                {% include post/youtube.html id="HCgXonz9L70" desc="Default ending" %}
+            </div>
+
+            <div class="hidden final-thicc-bonkus">
+                {% include post/youtube.html id="A4-qLI8DJZM" desc="Safe path + watch out for griefers" %}
+            </div>
+
+            <div class="hidden final-alt-light-swinger">
+                {% include post/youtube.html id="TUY97MZpxh8" desc="Alternative Light Swingers safe spot" %}
+            </div>
+
+            <div class="hidden final-blizzard-fans">
+                {% include post/youtube.html id="v3NBcyu48c8" desc="Fans: Just jump or walk into them" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <h2>Other Stuff</h2>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary" data-id="other-griefing">Griefing</button>
+            <button type="button" class="btn btn-light" data-id="other-useless">Useless Shortcuts</button>
+            <button type="button" class="btn btn-light" data-id="other-clutches">Clutches</button>
+        </div>
+
+        <div class="other-griefing">
+            {% include post/youtube.html id="gRaOnee1r9w" desc="Standing near the rear of the hoverboard is a risky endeavor" %}
+        </div>
+
+        <div class="hidden other-useless">
+            {% include post/youtube.html id="o5_L7GisjaI" desc="Climb on the light rods, because why not!" %}
+        </div>
+
+        <div class="hidden other-clutches">
+            <div class="row">
+                <div class="col">
+                    {% include post/youtube.html id="gCokJ9SY5fU" desc="The Slingus Flingus to the rescue; this was most certainly intentional! ;)" %}
+                </div>
+
+                <div class="col">
+                    {% include post/youtube.html id="GB-OSwMAKKA" desc="Don't try this at home kids" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
