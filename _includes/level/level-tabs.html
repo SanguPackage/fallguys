@@ -8,48 +8,51 @@
         {% endif %}
 
         {% assign hasTabs = section.tabs | first %}
-        {% if hasTabs.title %}
-            <div class="btn-group">
-                {% for tab in section.tabs %}
-                    {% if forloop.index == 1 %}
-                        {% assign buttonClass = "btn-secondary" %}
-                    {% else %}
-                        {% assign buttonClass = "btn-light" %}
-                    {% endif %}
+        <div class="card">
+            {% if hasTabs.title %}
+                <div class="btn-group">
+                    {% for tab in section.tabs %}
+                        {% if forloop.index == 1 %}
+                            {% assign buttonClass = "btn-secondary" %}
+                        {% else %}
+                            {% assign buttonClass = "btn-light" %}
+                        {% endif %}
 
-                    {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | downcase %}
-                    <button type="button" class="btn {{ buttonClass }}" data-id="{{ id }}">
-                        {{ tab.title }}
-                    </button>
+                        {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | downcase %}
+                        <button type="button" class="btn {{ buttonClass }}" data-id="{{ id }}">
+                            {{ tab.title }}
+                        </button>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <div class="card-body">
+                {% for tab in section.tabs %}
+                    {% assign id = section.name | append: tab.title | replace: ' ', '-'| replace: '&', '' | downcase %}
+                    {% if forloop.index != 1 %}
+                        {% assign hidden = " hidden" %}
+                    {% else %}
+                        {% assign hidden = "" %}
+                    {% endif %}
+                    <div class="{{ id }}{{ hidden }}">
+                        {% if tab.leading %}
+                            <p>{{ tab.leading }}</p>
+                        {% endif %}
+
+                        {% if tab.split %}
+                            <div class="row">
+                                {% for movie in tab.split %}
+                                    <div class="col">
+                                        {% include post/youtube.html id=movie.youtube desc=movie.desc %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {% include post/youtube.html id=tab.youtube desc=tab.desc %}
+                        {% endif %}
+                    </div>
                 {% endfor %}
             </div>
-        {% endif %}
-
-        {% for tab in section.tabs %}
-            {% assign id = section.name | append: tab.title | replace: ' ', '-'| replace: '&', '' | downcase %}
-            {% if forloop.index != 1 %}
-                {% assign hidden = " hidden" %}
-            {% else %}
-                {% assign hidden = "" %}
-            {% endif %}
-            <div class="{{ id }}{{ hidden }}">
-                {% if tab.leading %}
-                    <p>{{ tab.leading }}</p>
-                {% endif %}
-
-                {% if tab.split %}
-                    <div class="row">
-                        {% for movie in tab.split %}
-                            <div class="col">
-                                {% include post/youtube.html id=movie.youtube desc=movie.desc %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% else %}
-                    {% include post/youtube.html id=tab.youtube desc=tab.desc %}
-                {% endif %}
-            </div>
-        {% endfor %}
-
+        </div>
     </div>
 </div>
