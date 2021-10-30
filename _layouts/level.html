@@ -84,4 +84,13 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
     </div>
 
     {{ content }}
+
+    <div class="row">
+        <h2>Missing Videos</h2>
+        <ul>
+            {% for vid in page.missing %}
+                <li>{{ vid }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
