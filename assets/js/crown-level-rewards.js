@@ -27,6 +27,13 @@ $(function() {
                 btn.removeClass('btn-primary');
                 btn.addClass('btn-light');
                 $('table.crown-rewards tbody tr.' + type).hide();
+
+                // None selected == show all
+                var nonSelected = $('.crown-rewards-filters button.btn-primary').length === 0;
+                if (nonSelected) {
+                    $('table.crown-rewards tbody tr').each(function() { $(this).show(); });
+                    firstFilter = true;
+                }
             } else {
                 btn.removeClass('btn-light');
                 btn.addClass('btn-primary');
