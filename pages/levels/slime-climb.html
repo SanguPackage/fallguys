@@ -10,193 +10,91 @@ speedrun:
   desc: Uhoh, that's pretty bad. The Yellow Beam shortcut & Yeetus make it somewhat bearable.
 
 missing:
-  - Flyby
-  - Canon & Moving Blocks: normal crossover
-  - Canon & Moving Blocks: tree variant
-  - Speedrun: I didn't have any decent time?
-  - Moving Blocks 2: normal passby
+  - "Flyby"
+  - "Canon & Moving Blocks: normal crossover"
+  - "Canon & Moving Blocks: tree variant"
+  - "Moving Blocks 2: normal passby"
+  - "Moving blocks 2: low grav zone with rotating hammer shortcut"
+  - "Slime Climb: low gravity variant vid is pretty slow"
+
+sections:
+  - name: "The Start"
+    tabs:
+      - title: Easy
+        youtube: TrMEflEEfjA
+        desc: "By far the easiest start"
+      - title: Hard
+        leading: "Hardest start because there are always many beans attempting it but obviously also the fastest."
+        youtube: kTKFz3Y9KgU
+        desc: "There is usually enough time to attempt it a second time but if the third time fails, the slime will be there."
+  - name: "Moving Blocks 1"
+    tabs:
+      - title: "Dive Back"
+        split:
+          - youtube: yeK-EGavYpI
+            desc: "If you think they're gonna get ya, jump away and dive back onto the platform"
+          - youtube: XutnCeijCBo
+            desc: "Jump & Dive back on the platform"
+  - name: "Yellow Beams"
+    tabs:
+      - title: "Easy"
+        youtube: mgqpzc8bdAQ
+        desc: "Jump & Dive onto the platform to get to the Beams. Cut of the corner at the end of the beams."
+      - title: Hard
+        youtube: yeLg1YxLQwI
+        desc: "Jump a bit to the right when jumping off the yellow Beam & hit that jump button like crazy for the second one!"
+  - name: "Rotating Hammers"
+    tabs:
+      - title: "Jumping"
+        youtube: 18pfsXVtdUQ
+        desc: "Jump over & in between the hammers :)"
+      - title: Gravity Zone
+        youtube: xctPKLNcx3o
+        desc: "Jump onto the beam and into the Rotating Hammers-field"
+  - name: "Moving Blocks 2"
+    tabs:
+      - title: "Dive"
+        youtube: HG3gz6NpoTE
+        desc: "It's not necessary to dive to pass them but it makes it easier to do"
+  - name: "Final U-Turn"
+    tabs:
+      - title: "Standard"
+        youtube: 9A8L9ZTtVyw
+        desc: "I don't recommend using the Donuts for that extra boost though"
+      - title: Rotating Hammers
+        youtube: 0oFpnIJbU2k
+        desc: "Jump & Dive to avoid the first two hammers + last hammer safe path"
+      - title: "Thicc Bonkus"
+        split:
+          - youtube: DxLYhMI33RI
+            desc: "Safe Path (Left)"
+          - youtube: yBEYzbRY7mg
+            desc: "Safe Path (Right)"
+      - title: "Yeetus"
+        youtube: 5IAd6RshmZI
+        desc: "Wheeeeeee!"
+      - title: Blizzard Fan
+        youtube: jgBflykWNBk
+        desc: "Make sure the Fan is coming towards you as you attempt to cross"
+      - title: Button & Canon
+        youtube: KLHmJbenfSw
+        desc: "Canon Safe Path"
+  - name: "Other Stuff"
+    tabs:
+      - title: "Bert Rescue"
+        youtube: ZskJxkY9c78
+        desc: "10 Shards for every Bert over the finish!"
+      - title: "Useless Shortcuts"
+        youtube: C9F2kp8_4TE
+        desc: "One of my favourites"
+      - title: "Clutches"
+        split:
+          - youtube: iG_6dFHrJTY
+            desc: "Moving Walls Clutch"
+          - youtube: v9amOv_Izf8
+            desc: "The Gravity Zone is too risky..."
 ---
 
-
-<div class="row">
-    <div class="col">
-        <h2>The Start</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="start-easy">Easy</button>
-            <button type="button" class="btn btn-light" data-id="start-hard">Hard</button>
-        </div>
-
-        <div class="start-easy">
-            {% include post/youtube.html id="TrMEflEEfjA" desc="By far the easiest start" %}
-        </div>
-
-        <div class="hidden start-hard">
-            <p>Hardest start because there are always many beans attempting it but obviously also the fastest.</p>
-
-            {% include post/youtube.html id="kTKFz3Y9KgU" desc="There is usually enough time to attempt it a second time but if the third time fails, the slime will be there." %}
-        </div>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col">
-        <h2>Moving Blocks 1</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="moving-blocks1-dive-back">Dive Back</button>
-        </div>
-
-        <div class="moving-blocks1-dive-back">
-            {% include post/youtube.html id="yeK-EGavYpI" desc="If you think they're gonna get ya, jump away and dive back onto the platform" %}
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="row">
-    <div class="col">
-        <h2>Yellow Beams</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="beams-easy">Easy</button>
-            <button type="button" class="btn btn-light" data-id="beams-hard">Hard</button>
-        </div>
-
-        <div class="beams-easy">
-            {% include post/youtube.html id="mgqpzc8bdAQ" desc="Jump & Dive onto the platform to get to the Beams. Cut of the corner at the end of the beams." %}
-        </div>
-
-        <div class="hidden beams-hard">
-            {% include post/youtube.html id="yeLg1YxLQwI" desc="Jump a bit to the right when jumping off the yellow Beam & hit that jump button like crazy for the second one!" %}
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <h2>Rotating Hammers</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="rotating-hammers-jumping">Jumping</button>
-            <button type="button" class="btn btn-light" data-id="rotating-hammers-grav-zone">Gravity Zone</button>
-        </div>
-
-        <div class="rotating-hammers-jumping">
-            {% include post/youtube.html id="18pfsXVtdUQ" desc="Jump over & in between the hammers :)" %}
-        </div>
-
-        <div class="hidden rotating-hammers-grav-zone">
-            {% include post/youtube.html id="xctPKLNcx3o" desc="Jump onto the beam and into the Rotating Hammers-field" %}
-        </div>
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="col">
-        <h2>Moving Blocks 2</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="moving-blocks2-dive">Dive</button>
-        </div>
-
-        <div class="moving-blocks2-dive">
-            {% include post/youtube.html id="HG3gz6NpoTE" desc="It's not necessary to dive to pass them but it makes it easier to do" %}
-        </div>
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="col">
-        <h2>Final U-Turn</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="final-standard">Standard</button>
-            <button type="button" class="btn btn-light" data-id="final-rotating-hammers">Rotating Hammers</button>
-            <button type="button" class="btn btn-light" data-id="final-thicc-bonkus">Thicc Bonkus</button>
-            <button type="button" class="btn btn-light" data-id="final-yeetus">Yeetus</button>
-            <button type="button" class="btn btn-light" data-id="final-fan">Blizzard Fan</button>
-            <button type="button" class="btn btn-light" data-id="final-button-canon">Button & Canon</button>
-        </div>
-
-        <div class="hidden final-rotating-hammers">
-            {% include post/youtube.html id="0oFpnIJbU2k" desc="Jump & Dive to avoid the first two hammers + last hammer safe path" %}
-        </div>
-
-        <div class="final-standard">
-            {% include post/youtube.html id="9A8L9ZTtVyw" desc="I don't recommend using the Donuts for that extra boost though" %}
-        </div>
-
-        <div class="hidden final-thicc-bonkus">
-            <div class="row">
-                <div class="col">
-                    {% include post/youtube.html id="DxLYhMI33RI" desc="Safe Path (Left)" %}
-                </div>
-
-                <div class="col">
-                    {% include post/youtube.html id="yBEYzbRY7mg" desc="Safe Path (Right)" %}
-                </div>
-            </div>
-        </div>
-
-        <div class="hidden final-fan">
-            {% include post/youtube.html id="jgBflykWNBk" desc="Make sure the Fan is coming towards you as you attempt to cross" %}
-        </div>
-
-        <div class="hidden final-button-canon">
-            {% include post/youtube.html id="KLHmJbenfSw" desc="Canon Safe Path" %}
-        </div>
-
-        <div class="hidden final-yeetus">
-            {% include post/youtube.html id="5IAd6RshmZI" desc="Wheeeeeee!" %}
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <h2>Other Stuff</h2>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-id="other-bert">Bert Rescue</button>
-            <button type="button" class="btn btn-light" data-id="other-useless">Useless Shortcuts</button>
-            <button type="button" class="btn btn-light" data-id="other-clutches">Clutches</button>
-        </div>
-
-        <div class="other-bert">
-            {% include post/youtube.html id="ZskJxkY9c78" desc="10 Shards for every Bert over the finish!" %}
-        </div>
-
-        <div class="hidden other-useless">
-            {% include post/youtube.html id="C9F2kp8_4TE" desc="One of my favourites" %}
-        </div>
-
-        <div class="hidden other-clutches">
-            <div class="row">
-                <div class="col">
-                    {% include post/youtube.html id="iG_6dFHrJTY" desc="Moving Walls Clutch" %}
-                </div>
-
-                <div class="col">
-                    {% include post/youtube.html id="v9amOv_Izf8" desc="The Gravity Zone is too risky..." %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--
+More Berts: wKNsQL9Lkdk  Ng-cQWctUCg
+-->

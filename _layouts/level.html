@@ -34,10 +34,10 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
         <h4>Our Verdict</h4>
         <div>Score: {{ level.score.lao }}%</div>
         {% if level.score.squads %}
-        <div>Score Squads: {{ level.score.squads }}%</div>
+            <div>Score Squads: {{ level.score.squads }}%</div>
         {% endif %}
         {% if level.score.variant %}
-        <div>Score Variants: {{ level.score.variant }}%</div>
+            <div>Score Variants: {{ level.score.variant }}%</div>
         {% endif %}
 
         {{ level.verdict }}
@@ -82,6 +82,10 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
             </div>
         {% endif %}
     </div>
+
+    {% for section in page.sections %}
+        {% include level/level-tabs.html section=section %}
+    {% endfor %}
 
     {{ content }}
 
