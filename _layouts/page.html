@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<div>
-    {% include blog/big-header.html title=page.title %}
-    <section class="blog-sidebar">
-        <div class="container">
-            <div class="row">
-                {{ content }}
-            </div>
+
+<div class="container">
+    {% unless page.hasOwnBackButton %}
+        <div style="float: right; font-size: 0.4em; margin-top: 15px; margin-bottom: 5px;">
+            <a href="{{ site.baseurl }}/" class="btn btn-light">Sangu's Fall Guys <i class="fa fa-long-arrow-alt-right"></i></a>
         </div>
-    </section>
+    {% endunless %}
+    <div class="row" style="clear: both;">
+        {{ content }}
+    </div>
 </div>
