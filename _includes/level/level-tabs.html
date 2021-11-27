@@ -42,7 +42,7 @@
                         {% if tab.split %}
                             <div class="row">
                                 {% for movie in tab.split %}
-                                    <div class="col">
+                                    <div class="col-6">
                                         {% include post/youtube.html id=movie.youtube desc=movie.desc %}
                                     </div>
                                 {% endfor %}
