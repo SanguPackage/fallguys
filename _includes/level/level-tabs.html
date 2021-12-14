@@ -18,7 +18,7 @@
                             {% assign buttonClass = "btn-light" %}
                         {% endif %}
 
-                        {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | downcase %}
+                        {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
                         <button type="button" class="btn {{ buttonClass }}" data-id="{{ id }}">
                             {{ tab.title }}
                         </button>
@@ -28,7 +28,7 @@
 
             <div class="card-body">
                 {% for tab in section.tabs %}
-                    {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | downcase %}
+                    {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
                     {% if forloop.index != 1 %}
                         {% assign hidden = " hidden" %}
                     {% else %}
