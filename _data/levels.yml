@@ -1,4 +1,5 @@
 - name: Big Fans
+  exists: true
   type: race
   sort_score: 79
   score:
@@ -59,6 +60,7 @@
 
 
 - name: Gate Crash
+  exists: true
   type: race
   sort_score: 70
   score:
@@ -238,6 +240,7 @@
 
 
 - name: Wall Guys
+  exists: true
   type: race
   sort_score: 84
   score:
@@ -380,6 +383,7 @@
 
 
 - name: Tail Tag
+  exists: true
   type: hunt
   sort_score: 89
   score:
@@ -545,6 +549,7 @@
 
 
 - name: Team Tail Tag
+  exists: true
   type: team
   sort_score: 30
   score:
