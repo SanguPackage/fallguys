@@ -1,0 +1,71 @@
+---
+layout: page
+title: Contributing
+permalink: /contributing
+---
+
+<div class="col">
+
+<h1>Contributing</h1>
+
+<p>You want to help? Yes please!</p>
+
+Ways to contribute:
+<ul>
+    <li>
+        <b>Text</b>
+        <ul>
+            <li>Many sections and/or videos could use some additional text to clarify what is happening (ie timings, ...)</li>
+            <li>Links to interesting posts on reddit relevant to a certain level</li>
+            <li>Links to interesting youtube videos (speedruns, tutorials, ...)</li>
+        </ul>
+    </li>
+    <li>
+        <b>Videos</b>
+        <br>
+        Videos of shortcuts are ideally in color Movie Star and pattern Lightning, default faceplate with no top/bottom costume.
+        But I'll probably take what I can get :)
+        <ul>
+            <li>Any of the missing videos as listed below</li>
+            <li>Any video not with color Movie Star & pattern Lightning are eligable to a replacement</li>
+            <li>Useless Shortcuts: you can get somewhere that's not really useful but still pretty cool?</li>
+        </ul>
+    </li>
+    <li>
+        <b>Fancy Art</b>
+        <br>
+        If you have some experience in Photoshop or designing websites...
+        <ul>
+            <li>The pages are quite dry at the moment</li>
+            <li>There is no header/footer</li>
+            <li>There should be a fancy picture on the top index.html page for each box</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Contact</h2>
+
+This entire site is <a href="https://github.com/SanguPackage/sangu-site/tree/master/fallguys">open source on Github</a>.
+You can create tickets there or <a href="mailto:{{ site.email }}">send me an email</a>.
+
+
+<h2>Missing Videos</h2>
+
+TODO: Need to loop over all levels here but site.pages & site.posts is empty?
+
+count={{ site.pages.size }}
+
+{% assign uhoh = site.pages | first %}
+
+{% for page in site.pages %}
+<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+<p>{{ page.content }}</p>
+{% endfor %}
+
+
+<h2>Current Speedruns</h2>
+
+
+
+
+</div>
