@@ -85,6 +85,7 @@
 
 
 - name: Knight Fever
+  exists: true
   type: race
   sort_score: 60
   score:
@@ -131,6 +132,7 @@
 
 
 - name: Short Circuit
+  exists: true
   type: race
   sort_score: 85
   score:
@@ -142,6 +144,7 @@
 
 
 - name: Ski Fall
+  exists: false
   type: race
   sort_score: 75
   score:
@@ -153,7 +156,7 @@
 
 
 - name: Skyline Stumble
-  exists: false
+  exists: true
   type: race
   sort_score: 60
   score:
