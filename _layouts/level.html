@@ -72,7 +72,7 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
             <div class="col">
                 <h2>Speedrun</h2>
                 {% assign desc = page.speedrun.desc %}
-                {% if page.speedrun.time %}
+                {% if page.speedrun.time and page.speedrun.time != "" %}
                     {% assign desc = desc | append: ' (' | append: page.speedrun.time | append: ')' %}
                 {% endif %}
                 {% include post/youtube.html id=page.speedrun.youtube desc=desc %}
@@ -86,12 +86,19 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
 
     {% if page.missing and page.missing.size > 0 and page.missing.first != "" %}
         <div class="row">
-            <h2>Missing Videos</h2>
-            <ul>
-                {% for vid in page.missing %}
-                    <li>{{ vid }}</li>
-                {% endfor %}
-            </ul>
+            <div class="col">
+                <h2>Missing Videos</h2>
+                See <a href="{{ site.baseurl }}/contributing" style="display: inline">Contributing</a> how you can help complete this page.
+                <br>
+                Missing on this page:
+                <ul>
+                    {% for vid in page.missing %}
+                        {% if vid != "" %}
+                            <li>{{ vid }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     {% endif %}
 </div>
