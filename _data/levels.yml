@@ -657,3 +657,45 @@
   howto: Stay atop the cracking ice to avoid the slime below!
   qualify: 1
   added: 3
+
+- name: Full Tilt
+  type: race
+  objective: Race to the finish!
+  howto: Run and balance across rows of 360 see-saws to reach the finish line!
+  qualify: 70
+  added: 6
+
+- name: Party Promenade
+  type: race
+  objective: Race to the finish!
+  howto: Navigate the obstacles and race to the finish line!
+  qualify: 70
+  added: 6
+
+- name: Pipe Dream
+  type: race
+  objective: Race to the finish!
+  howto: Navigate the pipes to reach the finish line!
+  qualify: 60
+  added: 6
+
+- name: Sum Fruit
+  type: logic
+  objective: Count the fruit!
+  howto: Count the fruit. Avoid the rising slime. When the screens show the quantity of a type of fruit, stand on the tile matching that fruit to survive!
+  qualify: ??
+  added: 5.Fun
+
+- name: Airtime
+  type: hunt
+  objective: Stay in the zone!
+  howto: Stay in the score zone to score points! Use the pipes to get back to the score zone if you fall!
+  qualify: 60
+  added: 6
+
+- name: Leading Light
+  type: hunt
+  objective: Stay in the spotlight!
+  howto: Stay in the moving spotlight to earn points!
+  qualify: 75
+  added: 6
