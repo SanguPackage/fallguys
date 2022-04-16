@@ -23,8 +23,8 @@ hasOwnBackButton: true
         <tbody>
             {% assign crownlevels = site.data.crownlevels | reverse %}
             {% for cl in crownlevels %}
-            <tr class="{{ cl.type }}">
-                <td>{{ cl.level }}</td>
+            <tr class="{{ cl.type }} level-{{ cl.level }}">
+                <td><a href="#{{ cl.level }}" name="{{ cl.level }}">{{ cl.level }}</a></td>
                 <td>{{ cl.name }}</td>
                 <td>{% include crown-reward.html size='sm' crownlevel=cl %}</td>
                 <td>{% include crown-reward-type.html type=cl.type %}</td>

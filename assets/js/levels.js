@@ -22,6 +22,7 @@ $(function() {
     });
 
     $('#search').keyup(function() {
+        // filtering: used in crown level rewards & levels
         var needle = $(this).val().toLowerCase();
         var rows = $('table.table tbody tr');
 
