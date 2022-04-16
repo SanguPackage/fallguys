@@ -20,4 +20,25 @@ $(function() {
         $('.' + id).removeClass('hidden');
         self.addClass('btn-secondary').removeClass('btn-light');
     });
+
+    $('#search').keyup(function() {
+        var needle = $(this).val().toLowerCase();
+        var rows = $('table.table tbody tr');
+
+        if (needle === '') {
+            rows.each(function() {
+                $(this).show();
+            });
+            return;
+        }
+
+        rows.each(function() {
+            var row = $(this);
+            if (row.text().toLowerCase().includes(needle)) {
+                row.show();
+            } else {
+                row.hide();
+            }
+        });
+    });
 });
