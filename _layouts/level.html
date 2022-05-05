@@ -38,8 +38,6 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
         {{ level.verdict }}
     </div> -->
 
-    {{ content }}
-
     {% if level.fallguystv %}
         <div class="alert alert-success">
             <a href="{{ level.fallguystv }}" style="float: left; margin-right: 12px; border: 1px solid black; margin-top: 4px" target="_blank" title="Check the {{ level.name }} Video now!">
@@ -52,12 +50,18 @@ Snowy Scrap: Wt_oWdvVxUo golden middle
             While the content is now somewhat dated, those videos remain gold.
             <br><br>
             <b>Click on the Fall Guys TV logo to see the video of {{ level.name }} now!</b>
+
+            {% if level.fallguystv_info %}
+                <br><br>
+                <b>Note:</b> {{ level.fallguystv_info }}
+            {% endif %}
         </div>
         <div class="row">
-            <div class="col">
-            </div>
+            <div class="col"></div>
         </div>
     {% endif %}
+
+    {{ content }}
 
     <div class="row">
         {% if page.flyby %}

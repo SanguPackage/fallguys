@@ -25,6 +25,7 @@
 
 
 - name: Door Dash
+  exists: true
   type: race
   sort_score: 50
   score:
@@ -48,6 +49,7 @@
 
 
 - name: Fruit Chute
+  exists: true
   type: race
   sort_score: 74
   score:
@@ -72,6 +74,7 @@
 
 
 - name: Hit Parade
+  exists: true
   type: race
   sort_score: 72
   score:
@@ -109,6 +112,7 @@
 
 
 - name: Roll On
+  exists: true
   type: race
   sort_score: 75
   score:
@@ -144,7 +148,7 @@
 
 
 - name: Ski Fall
-  exists: false
+  exists: true
   type: race
   sort_score: 75
   score:
@@ -209,6 +213,7 @@
 
 
 - name: Tip Toe
+  exists: true
   type: race
   sort_score: 70
   score:
@@ -221,6 +226,7 @@
 
 
 - name: Treetop Tumble
+  exists: true
   type: race
   sort_score: 70
   score:
@@ -232,6 +238,7 @@
 
 
 - name: Tundra Run
+  exists: true
   type: race
   sort_score: 70
   score:
@@ -270,6 +277,7 @@
 
 
 - name: Block Party
+  exists: true
   type: survival
   sort_score: 50
   score:
@@ -279,6 +287,7 @@
   qualify: ??
   added: 1
   fallguystv: https://www.youtube.com/watch?v=WD9s8g-no4A
+  fallguystv_info: "The trick to get on the edge on Fall Guys TV actually doesn't work anymore except on the new 5.1 platform variants."
 
 
 - name: Hoverboard Heroes
@@ -306,6 +315,7 @@
 
 
 - name: Roll Out
+  exists: true
   type: survival
   sort_score: 50
   score:
@@ -318,6 +328,7 @@
 
 
 - name: Snowball Survival
+  exists: true
   type: survival
   sort_score: 70
   score:
@@ -341,6 +352,7 @@
 
 
 - name: Button Bashers
+  exists: true
   type: hunt
   sort_score: 96
   score:
@@ -352,6 +364,7 @@
 
 
 - name: Bubble Trouble
+  exists: true
   type: hunt
   sort_score: 81
   score:
@@ -375,6 +388,7 @@
 
 
 - name: Pegwin Pool Party
+  exists: true
   type: hunt
   sort_score: 80
   score:
@@ -413,6 +427,7 @@
 
 
 - name: Basketfall
+  exists: true
   type: team
   sort_score: 50
   final_score: 60
@@ -438,6 +453,7 @@
   fallguystv: https://www.youtube.com/watch?v=4LACKvJYzrA
 
 - name: Egg Siege
+  exists: true
   type: team
   sort_score: 50
   score:
@@ -450,6 +466,7 @@
 
 
 - name: Fall Ball
+  exists: true
   type: team
   sort_score: 74
   final_score: 95
@@ -463,6 +480,7 @@
 
 
 - name: Hoarders
+  exists: true
   type: team
   sort_score: 40
   score:
@@ -476,6 +494,7 @@
 
 
 - name: Hoopsie Daisy
+  exists: true
   type: team
   sort_score: 60
   score:
@@ -488,6 +507,7 @@
 
 
 - name: Jinxed
+  exists: true
   type: team
   sort_score: 40
   final_score: 90
@@ -503,6 +523,7 @@
 
 
 - name: Pegwin Pursuit
+  exists: true
   type: team
   sort_score: 40
   score:
@@ -515,6 +536,7 @@
 
 
 - name: Power Trip
+  exists: true
   type: team
   sort_score: 40
   final_score: 60
@@ -528,6 +550,7 @@
 
 
 - name: Rock 'n' Roll
+  exists: true
   type: team
   sort_score: 70
   score:
@@ -540,6 +563,7 @@
 
 
 - name: Snowy Scrap
+  exists: true
   type: team
   sort_score: 70
   score:
@@ -580,6 +604,7 @@
 
 
 - name: Hex-A-Gone
+  exists: true
   type: final
   sort_score: 100
   score:
@@ -594,6 +619,7 @@
 
 
 - name: Jump Showdown
+  exists: true
   type: final
   sort_score: 60
   score:
@@ -609,6 +635,7 @@
 
 
 - name: Lost Temple
+  exists: true
   type: final
   sort_score: 60
   score:
@@ -621,6 +648,7 @@
 
 
 - name: Roll Off
+  exists: true
   type: final
   sort_score: 80
   score:
@@ -647,6 +675,7 @@
 
 
 - name: Thin Ice
+  exists: true
   type: final
   sort_score: 90
   score:
@@ -659,6 +688,7 @@
   added: 3
 
 - name: Full Tilt
+  exists: true
   type: race
   objective: Race to the finish!
   howto: Run and balance across rows of 360 see-saws to reach the finish line!
@@ -666,6 +696,7 @@
   added: 6
 
 - name: Party Promenade
+  exists: true
   type: race
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line!
@@ -673,6 +704,7 @@
   added: 6
 
 - name: Pipe Dream
+  exists: true
   type: race
   objective: Race to the finish!
   howto: Navigate the pipes to reach the finish line!
@@ -680,6 +712,7 @@
   added: 6
 
 - name: Sum Fruit
+  exists: true
   type: logic
   objective: Count the fruit!
   howto: Count the fruit. Avoid the rising slime. When the screens show the quantity of a type of fruit, stand on the tile matching that fruit to survive!
@@ -687,6 +720,7 @@
   added: 5.Fun
 
 - name: Airtime
+  exists: true
   type: hunt
   objective: Stay in the zone!
   howto: Stay in the score zone to score points! Use the pipes to get back to the score zone if you fall!
@@ -694,6 +728,7 @@
   added: 6
 
 - name: Leading Light
+  exists: true
   type: hunt
   objective: Stay in the spotlight!
   howto: Stay in the moving spotlight to earn points!
