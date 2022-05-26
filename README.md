@@ -29,6 +29,7 @@ Fall Guys
 ```ps1
 $env:JEKYLL_ENV = "production";
 bundle exec jekyll build;
+$env:JEKYLL_ENV = "development";
 ```
 
 And upload with ftp client.
