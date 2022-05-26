@@ -1,0 +1,21 @@
+---
+layout: page
+title: The Celebrations
+permalink: /the-celebrations
+---
+
+<div class="col">
+
+<h1>The Celebrations</h1>
+
+<div class="row">
+    {% for celebration in site.data.celebrations %}
+        <div class="col-4">
+            {% include post/youtube.html id=celebration.youtube desc=celebration.name %}
+        </div>
+    {% endfor %}
+</div>
+
+
+
+</div>

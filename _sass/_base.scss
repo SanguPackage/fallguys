@@ -68,4 +68,11 @@ body, html {
     .no-print {
         display: none !important;
     }
+    .only-print {
+        display: inline !important;
+    }
+}
+
+.only-print {
+    display: none;
 }
