@@ -635,7 +635,7 @@
 
 
 - name: Lost Temple
-  exists: true
+  exists: false
   type: final
   sort_score: 60
   score:
@@ -718,6 +718,14 @@
   howto: Count the fruit. Avoid the rising slime. When the screens show the quantity of a type of fruit, stand on the tile matching that fruit to survive!
   qualify: ??
   added: 5.Fun
+
+- name: Sweet Thieves
+  exists: true
+  type: invisibeans
+  objective: "Thieves: Steal candy, avoid guardians! Guardians: Defend candy, capture thieves!"
+  howto: "Thieves: Steal candy and avoid capture within the time limit! Use HoldToWalk to walk and stay invisible! Guardians: Defend the candy and capture all Thieves!"
+  qualify: "The 4 guardians or 8 thieves"
+  added: 6.5
 
 - name: Airtime
   exists: true
