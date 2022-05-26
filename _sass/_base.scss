@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+* {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
 body, html {
     height: 100%;
     max-width: 1920px;
