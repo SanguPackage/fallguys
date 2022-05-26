@@ -96,20 +96,23 @@ You can create tickets there or <a href="mailto:{{ site.email }}">send me an ema
 </div>
 
 
-<!-- <div class="row">
+<div class="row">
 <div class="col">
     <h2>Speedruns</h2>
     {% for page in site.levels %}
-        <a href="{{ page.url }}">{{ page.title }}</a>:
-        {% if page.speedrun.youtube == blank %}
-            No Speedrun
-        {% else %}
-            Current Time: {{page.speedrun.time }}
+        {% assign level = site.data.levels | where: 'name', page.title | first %}
+        {% if level.type == "race" %}
+            <a href="{{ page.url }}">{{ page.title }}</a>:
+            {% if page.speedrun.youtube == blank %}
+                None
+            {% else %}
+                {{page.speedrun.time }}
+            {% endif %}
+            <br>
         {% endif %}
-        <br>
     {% endfor %}
 </div>
-</div> -->
+</div>
 
 </div>
 </div>
