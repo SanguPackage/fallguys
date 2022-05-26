@@ -38,6 +38,9 @@ collections:
   pages:
     output: true
     permalink: /:title
+  levels:
+    output: true
+    permalink: /levels/:name
 
 # Build settings
 markdown: kramdown

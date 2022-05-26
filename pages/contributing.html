@@ -4,7 +4,7 @@ title: Contributing
 permalink: /contributing
 ---
 
-<div class="col">
+<div class="col-12">
 
 <h1>Contributing</h1>
 
@@ -48,24 +48,67 @@ Ways to contribute:
 This entire site is <a href="https://github.com/SanguPackage/sangu-site/tree/master/fallguys">open source on Github</a>.
 You can create tickets there or <a href="mailto:{{ site.email }}">send me an email</a>.
 
+<br><br>
+
+
+<h2>Credit</h2>
+
+<ul>
+    <li>You can get credit for any clips you send in (link to your youtube channel, twitch name, psn name, ...)</li>
+    <li>Either a link (Reddit, youtube, ...) or a video (of a speedrun, tactic, ...)</li>
+    <li>But videos shown inline are to be uploaded to SanguPackage youtube channel</li>
+</ul>
+
+
+</div>
+
+
+<div class="col-12">
+
+<div class="row">
 
 <h2>Missing Videos</h2>
 
-TODO: Need to loop over all levels here but site.pages & site.posts is empty?
-
-count={{ site.pages.size }}
-
-{% assign uhoh = site.pages | first %}
-
-{% for page in site.pages %}
-<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-<p>{{ page.content }}</p>
+<!-- The hasMissing assignment below is giving a liquid warning, but it still works -->
+{% for page in site.levels %}
+    {% assign hasMissing = false or page.missing and page.missing.size > 0 and page.missing.first != "" %}
+    {% if page.flyby == blank or page.speedrun.youtube == blank or hasMissing %}
+        <div class="col-4">
+            <a href="{{ page.url }}.html">{{ page.title }}</a>:
+            <ul>
+                {% if page.flyby == blank %}
+                    <li>Flyby</li>
+                {% endif %}
+                {% if page.speedrun.youtube == blank %}
+                    <li>Speedrun</li>
+                {% endif %}
+                {% for missing in page.missing %}
+                    {% if missing != blank %}
+                        <li>{{ missing }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
 {% endfor %}
 
-
-<h2>Current Speedruns</h2>
-
+</div>
 
 
+<!-- <div class="row">
+<div class="col">
+    <h2>Speedruns</h2>
+    {% for page in site.levels %}
+        <a href="{{ page.url }}">{{ page.title }}</a>:
+        {% if page.speedrun.youtube == blank %}
+            No Speedrun
+        {% else %}
+            Current Time: {{page.speedrun.time }}
+        {% endif %}
+        <br>
+    {% endfor %}
+</div>
+</div> -->
 
+</div>
 </div>
