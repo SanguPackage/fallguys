@@ -1,12 +1,6 @@
 ---
 layout: default
 ---
-<!--
-Tip Toe: FNcr0zq3bUg Thicc Bonkus variant
-Snowy Scrap: Wt_oWdvVxUo golden middle
--->
-
-
 <div class="container level-detail">
     {% assign level = site.data.levels | where: 'name', page.title | first %}
     {% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
