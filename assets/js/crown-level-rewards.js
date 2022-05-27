@@ -43,6 +43,7 @@ $(function() {
     });
 
 
+    // Color row based on hash on page load
     var startLevel = document.location.hash;
     if (startLevel) {
         $('.level-' + startLevel.slice(1)).addClass('table-primary');
