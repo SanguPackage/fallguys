@@ -1,0 +1,31 @@
+---
+layout: page
+title: Contributing
+permalink: /contributing-levels
+---
+
+<div class="col-12">
+
+<div class="row">
+
+<h2>Missing Videos</h2>
+
+{% for page in site.levels %}
+    {% if page.missing and page.missing.first != "" %}
+        <div class="col-4">
+            <a href="{{ page.url }}.html">{{ page.title }}</a>:
+            <ul>
+                {% for missing in page.missing %}
+                    {% if missing != blank %}
+                        <li>{{ missing }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% endfor %}
+
+</div>
+
+
+</div>

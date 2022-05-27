@@ -10,6 +10,13 @@ permalink: /contributing
 
 <p>You want to help? Yes please!</p>
 
+Missing stuff:
+<ul>
+    <li><a href="{{ site.baseurl }}/contributing-speedrun">Speedruns & Flybys</a></li>
+    <li><a href="{{ site.baseurl }}/contributing-levels">Missing Level Videos</a></li>
+</ul>
+
+
 Ways to contribute:
 <ul>
     <li>
@@ -61,58 +68,4 @@ You can create tickets there or <a href="mailto:{{ site.email }}">send me an ema
 </ul>
 
 
-</div>
-
-
-<div class="col-12">
-
-<div class="row">
-
-<h2>Missing Videos</h2>
-
-<!-- The hasMissing assignment below is giving a liquid warning, but it still works -->
-{% for page in site.levels %}
-    {% assign hasMissing = false or page.missing and page.missing.size > 0 and page.missing.first != "" %}
-    {% if page.flyby == blank or page.speedrun.youtube == blank or hasMissing %}
-        <div class="col-4">
-            <a href="{{ page.url }}.html">{{ page.title }}</a>:
-            <ul>
-                {% if page.flyby == blank %}
-                    <li>Flyby</li>
-                {% endif %}
-                {% if page.speedrun.youtube == blank %}
-                    <li>Speedrun</li>
-                {% endif %}
-                {% for missing in page.missing %}
-                    {% if missing != blank %}
-                        <li>{{ missing }}</li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
-{% endfor %}
-
-</div>
-
-
-<div class="row">
-<div class="col">
-    <h2>Speedruns</h2>
-    {% for page in site.levels %}
-        {% assign level = site.data.levels | where: 'name', page.title | first %}
-        {% if level.type == "race" %}
-            <a href="{{ page.url }}">{{ page.title }}</a>:
-            {% if page.speedrun.youtube == blank %}
-                None
-            {% else %}
-                {{page.speedrun.time }}
-            {% endif %}
-            <br>
-        {% endif %}
-    {% endfor %}
-</div>
-</div>
-
-</div>
 </div>
