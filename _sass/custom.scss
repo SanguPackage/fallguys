@@ -73,6 +73,27 @@
     .card .card-body {
         padding-bottom: 0;
     }
+
+    .level-section {
+        h2 {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            i {
+                visibility: hidden;
+                color: gray;
+                opacity: 0.6;
+                margin-left: -30px;
+                font-size: 21px;
+            }
+
+            &:hover i {
+                visibility: visible;
+            }
+        }
+    }
 }
 
 .hidden {

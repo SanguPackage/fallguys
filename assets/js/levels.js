@@ -8,6 +8,7 @@ $(function() {
     $('.level-detail .btn-group > button').click(function() {
         var self = $(this);
 
+        // Button coloring & panel hiding/showing
         var allButtons = $('button', self.parent());
         allButtons.each(function() {
             $(this).removeClass('btn-secondary').addClass('btn-light');
@@ -19,6 +20,9 @@ $(function() {
         var id = self.data('id');
         $('.' + id).removeClass('hidden');
         self.addClass('btn-secondary').removeClass('btn-light');
+
+        // Save hash for page load restore
+        history.pushState({}, '', '#' + self.data('id'));
     });
 
     $('#search').keyup(function() {
@@ -42,4 +46,13 @@ $(function() {
             }
         });
     });
+
+    // Restore hash at page load
+    var hash = document.location.hash;
+    if (hash) {
+        var button = $('.level-detail .btn-group > button[data-id="' + hash.slice(1) + '"]');
+        if (button.length === 1) {
+            button.click();
+        }
+    }
 });

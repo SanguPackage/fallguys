@@ -1,7 +1,14 @@
 {% assign section = include.section %}
 <div class="row">
-    <div class="col">
-        <h2>{{ section.name }}</h2>
+    <div class="col level-section">
+        {% assign sectionKey = section.name | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
+        <a name="{{ sectionKey }}"></a>
+        <h2>
+            <a href="#{{ sectionKey }}">
+                <i class="fa fa-link"></i>
+                {{ section.name }}
+            </a>
+        </h2>
 
         {% if section.leading %}
             {{ section.leading }}
@@ -18,7 +25,8 @@
                             {% assign buttonClass = "btn-light" %}
                         {% endif %}
 
-                        {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
+                        {% assign id = section.name | append: '-' | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
+                        <a name="{{ id }}"></a>
                         <button type="button" class="btn {{ buttonClass }}" data-id="{{ id }}">
                             {{ tab.title }}
                         </button>
@@ -28,7 +36,7 @@
 
             <div class="card-body">
                 {% for tab in section.tabs %}
-                    {% assign id = section.name | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
+                    {% assign id = section.name | append: '-' | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
                     {% if forloop.index != 1 %}
                         {% assign hidden = " hidden" %}
                     {% else %}
