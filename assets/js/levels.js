@@ -14,11 +14,11 @@ $(function() {
             $(this).removeClass('btn-secondary').addClass('btn-light');
 
             var id = $(this).data('id');
-            $('.' + id).addClass('hidden');
+            $('.' + id).addClass('d-none');
         });
 
         var id = self.data('id');
-        $('.' + id).removeClass('hidden');
+        $('.' + id).removeClass('d-none');
         self.addClass('btn-secondary').removeClass('btn-light');
 
         // Save hash for page load restore

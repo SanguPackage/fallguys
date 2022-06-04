@@ -1,0 +1,30 @@
+@media (max-width: 600px) {
+    .crown-levels-container {
+        padding: 0 4px !important;
+    }
+}
+
+.crown-rewards {
+    .reward-colour {
+        display: inline-block;
+        width: 7em;
+        height: 7em;
+        border-radius: 15%;
+        border: 0;
+        padding: 0;
+
+        &.sm {
+            width: 3em;
+            height: 3em;
+        }
+    }
+
+    .reward-name {
+        font-size: 26px;
+    }
+
+    .crown-count {
+        font-size: 18px;
+        vertical-align: inherit;
+    }
+}

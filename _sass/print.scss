@@ -1,0 +1,24 @@
+* {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    .only-print {
+        display: inline !important;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.only-print {
+    display: none;
+}

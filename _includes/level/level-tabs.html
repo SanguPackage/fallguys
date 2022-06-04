@@ -38,7 +38,7 @@
                 {% for tab in section.tabs %}
                     {% assign id = section.name | append: '-' | append: tab.title | replace: ' ', '-' | replace: '&', '' | replace: '+', '-' | replace: '(', '' | replace: ')', '' | downcase %}
                     {% if forloop.index != 1 %}
-                        {% assign hidden = " hidden" %}
+                        {% assign hidden = " d-none" %}
                     {% else %}
                         {% assign hidden = "" %}
                     {% endif %}

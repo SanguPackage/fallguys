@@ -10,7 +10,7 @@ permalink: /the-finals
             <tr>
                 <th style="width: 50px">Level</th>
                 <th>&nbsp;</th>
-                <th>Type</th>
+                <th class="d-none d-md-table-cell">Type</th>
                 <!-- <th>Score</th> -->
             </tr>
         </thead>
@@ -26,9 +26,9 @@ permalink: /the-finals
                         {% else %}
                             {{ level.name }}
                         {% endif %}
-                        <p>{{ level.howto }}</p>
+                        <p class="d-inline d-md-block">{{ level.howto }}</p>
                     </td>
-                    <td>{% include level/level-type.html type=level.type %}</td>
+                    <td class="d-none d-md-table-cell">{% include level/level-type.html type=level.type %}</td>
                     <!-- <td>{{ level.sort_score }}%</td> -->
                 </tr>
             {% endfor %}
@@ -53,7 +53,7 @@ permalink: /the-finals
             <tr>
                 <th style="width: 50px">Level</th>
                 <th>&nbsp;</th>
-                <th>Type</th>
+                <th class="d-none d-md-table-cell">Type</th>
                 <!-- <th>Score</th> -->
             </tr>
         </thead>
@@ -69,9 +69,9 @@ permalink: /the-finals
                         {% else %}
                             {{ level.name }}
                         {% endif %}
-                        <p>{{ level.howto }}</p>
+                        <p class="d-inline d-md-block">{{ level.howto }}</p>
                     </td>
-                    <td>{% include level/level-type.html type=level.type %}</td>
+                    <td class="d-none d-md-table-cell">{% include level/level-type.html type=level.type %}</td>
                     <!-- <td>{{ level.final_score }}%</td> -->
                 </tr>
             {% endfor %}
