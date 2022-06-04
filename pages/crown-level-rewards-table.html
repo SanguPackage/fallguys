@@ -13,7 +13,7 @@ containerClass: 'crown-levels-container'
     <table class="table table-hover crown-rewards">
         <thead class="table-dark">
             <tr>
-                <th>Level</th>
+                <th class="d-none d-md-table-cell">Level</th>
                 <th>Name</th>
                 <th>Reward</th>
                 <th class="d-none d-md-table-cell">Type</th>
@@ -25,11 +25,14 @@ containerClass: 'crown-levels-container'
             {% assign crownlevels = site.data.crownlevels | reverse %}
             {% for cl in crownlevels %}
             <tr class="{{ cl.type }} level-{{ cl.level }}">
-                <td>
-                    <a href="#{{ cl.level }}" name="{{ cl.level }}" class="no-print">{{ cl.level }}</a>
+                <td class="d-none d-md-table-cell">
+                    <a href="#{{ cl.level }}" class="no-print">{{ cl.level }}</a>
                     <span class="only-print">{{ cl.level }}</span>
                 </td>
-                <td>{{ cl.name }}</td>
+                <td>
+                    <a href="#{{ cl.level }}" name="{{ cl.level }}" class="no-print d-md-none">{{ cl.level }}</a>
+                    {{ cl.name }}
+                </td>
                 <td>{% include crown-reward.html size='sm' crownlevel=cl %}</td>
                 <td class="d-none d-md-table-cell">{% include crown-reward-type.html type=cl.type %}</td>
                 <td>
