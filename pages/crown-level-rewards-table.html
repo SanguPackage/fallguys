@@ -6,7 +6,7 @@ permalink: /crown-level-rewards-table
 hasOwnBackButton: true
 ---
 
-<div class="col" style="margin-top: 25px">
+<div class="col" style="margin-top: 15px">
     {% include crown-reward-filters.html current='table' %}
 
     <table class="table table-hover crown-rewards">
@@ -15,9 +15,9 @@ hasOwnBackButton: true
                 <th>Level</th>
                 <th>Name</th>
                 <th>Reward</th>
-                <th>Type</th>
-                <th>Total Crowns</th>
-                <th>For next rank</th>
+                <th class="d-none d-md-table-cell">Type</th>
+                <th title="Total crowns">Crowns</th>
+                <th class="d-none d-md-table-cell" title="Crowns for next rank">Next</th>
             </tr>
         </thead>
         <tbody>
@@ -30,12 +30,12 @@ hasOwnBackButton: true
                 </td>
                 <td>{{ cl.name }}</td>
                 <td>{% include crown-reward.html size='sm' crownlevel=cl %}</td>
-                <td>{% include crown-reward-type.html type=cl.type %}</td>
+                <td class="d-none d-md-table-cell">{% include crown-reward-type.html type=cl.type %}</td>
                 <td>
                     <img src="{{ site.baseurl }}/img/crown.png" style="padding-right: 6px">
                     <span class="crown-count">{{ cl.crowns }}</span>
                 </td>
-                <td>
+                <td class="d-none d-md-table-cell">
                     {% if cl.next %}
                         <img src="{{ site.baseurl }}/img/crown.png" style="padding-right: 6px">
                         <span class="crown-count">{{ cl.next }}</span>

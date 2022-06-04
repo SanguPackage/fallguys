@@ -1,6 +1,6 @@
 <div style="margin-bottom: 8px" class="no-print">
     <div class="crown-rewards-filters" style="display: flex">
-        <div style="margin-right: 8px">
+        <div class="d-none d-xl-block" style="margin-right: 8px">
             <button type="button" class="btn btn-light" data-type="upper">Upper</button>
             <button type="button" class="btn btn-light" data-type="lower">Lower</button>
             <button type="button" class="btn btn-light" data-type="pattern">Patterns</button>
@@ -11,25 +11,25 @@
         </div>
 
         <div class="form-group" style="max-width: 250px">
-            <input type="email" class="form-control" id="search" placeholder="Search">
+            <input type="text" class="form-control" id="search" placeholder="Search">
         </div>
 
         <div style="text-align: right; flex: 1">
             {% if include.current == 'cards' %}
                 <a href="{{ site.baseurl }}/crown-level-rewards-table.html" class="btn btn-dark" title="Go to Table view">
-                    <i class="fa fa-table"></i> Table Version
+                    <i class="fa fa-table"></i> <span class="d-none d-xl-inline">Table Version</span>
                 </a>
             {% else %}
                 <a href="{{ site.baseurl }}/crown-level-rewards.html" class="btn btn-dark"title="Go to Cards view">
-                    <i class="fa fa-address-card"></i></i> Cards Version
+                    <i class="fa fa-address-card"></i></i> <span class="d-none d-xl-inline">Cards Version</span>
                 </a>
             {% endif %}
 
-            <a href="{{ site.baseurl }}/assets/crown-level-rewards.csv" class="btn btn-dark" title="Download CSV of the crown rewards data">
+            <a href="{{ site.baseurl }}/assets/crown-level-rewards.csv" class="btn btn-dark d-none d-xl-inline" title="Download CSV of the crown rewards data">
                 <i class="fa fa-file-excel"></i>
             </a>
 
-            <a href="{{ site.baseurl }}/" class="btn btn-light">Sangu's Fall Guys <i class="fa fa-long-arrow-alt-right"></i></a>
+            <a href="{{ site.baseurl }}/" class="btn btn-light" title="Go back"><span class="d-none d-xxl-inline">Sangu's Fall Guys </span><i class="fa fa-long-arrow-alt-right"></i></a>
         </div>
     </div>
 </div>
