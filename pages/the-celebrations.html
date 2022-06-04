@@ -10,12 +10,12 @@ permalink: /the-celebrations
 
 <div class="row">
     {% for celebration in site.data.celebrations %}
-        <div class="col-4">
-            {% include post/youtube.html id=celebration.youtube desc=celebration.name %}
+        <div class="col-12 col-xl-4 col-md-6">
+            {% assign desc = celebration.name | append: ' (' | append: celebration.time | append: ')' %}
+            {% include post/youtube.html id=celebration.youtube desc=desc %}
         </div>
     {% endfor %}
 </div>
-
 
 
 </div>
