@@ -5,20 +5,8 @@
 }
 
 @media print {
-    .no-print {
-        display: none !important;
-    }
-
-    .only-print {
-        display: inline !important;
-    }
-
     a {
         color: black;
         text-decoration: none;
     }
-}
-
-.only-print {
-    display: none;
 }
