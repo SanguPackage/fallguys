@@ -1,0 +1,20 @@
+{% assign level = include.level %}
+{% assign key = level.name | downcase | replace: ' ', '-' | replace: "'", '' %}
+{% assign hidden = "" %}
+{% if include.hidden %}
+    {% assign hidden = "style='display: none'" %}
+{% endif %}
+
+<tr {{ hidden }}>
+    <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
+    <td>
+        {% if level.exists %}
+            <a href="{{ site.baseurl }}/levels/{{ key }}.html">{{ level.name }}</a>
+        {% else %}
+            {{ level.name }}
+        {% endif %}
+        <p class="d-inline d-md-block">{{ level.howto }}</p>
+    </td>
+    <td class="d-none d-md-table-cell">{% include level/level-type.html type=level.type %}</td>
+    <!-- <td>{{ level.sort_score }}%</td> -->
+</tr>

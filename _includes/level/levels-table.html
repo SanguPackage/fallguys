@@ -1,0 +1,35 @@
+{% if include.type == "finals" %}
+    {% assign levels = site.data.levels | where: 'type', 'final' %}
+    {% assign others = '' | split: '' %}
+    {% for level in site.data.levels %}
+        {% if level.type != 'final' %}
+            {% assign others = others | push: level %}
+        {% endif %}
+    {% endfor %}
+    {% include level/levels-table-core.html levels=levels others=others %}
+
+
+{% elsif include.type == "team-finals" %}
+    {% assign levels = '' | split: '' %}
+    {% assign others = '' | split: '' %}
+    {% for level in site.data.levels %}
+        {% if level.type == 'team' and level.qualify == 50 %}
+            {% assign levels = levels | push: level %}
+        {% endif %}
+    {% endfor %}
+    {% include level/levels-table-core.html levels=levels others=others %}
+
+
+{% elsif include.type == "levels" %}
+    {% assign levels = '' | split: '' %}
+    {% assign others = '' | split: '' %}
+    {% for level in site.data.levels %}
+        {% if level.type != 'final' %}
+            {% assign levels = levels | push: level %}
+        {% endif %}
+        {% if level.type == 'final' %}
+            {% assign others = others | push: level %}
+        {% endif %}
+    {% endfor %}
+    {% include level/levels-table-core.html levels=levels others=others %}
+{% endif %}

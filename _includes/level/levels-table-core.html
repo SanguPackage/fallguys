@@ -1,0 +1,25 @@
+<div class="col levels">
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th style="width: 50px">Level</th>
+                <th>&nbsp;</th>
+                <th class="d-none d-md-table-cell">Type</th>
+                <!-- <th>Score</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            {% assign levels = include.levels | sort: 'sort_score' | reverse %}
+            {% for level in levels %}
+                {% include level/levels-table-rows.html level=level %}
+            {% endfor %}
+
+            {% if include.others.size > 0 %}
+                {% assign levels = include.others | sort: 'sort_score' | reverse %}
+                {% for level in levels %}
+                    {% include level/levels-table-rows.html level=level hidden=true %}
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
