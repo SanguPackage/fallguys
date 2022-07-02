@@ -9,13 +9,22 @@ permalink: /the-celebrations
 <h1>The Celebrations</h1>
 
 <div class="row">
-    {% for celebration in site.data.celebrations %}
+{% assign season = "" %}
+{% for celebration in site.data.celebrations %}
+    {% if celebration.season != season %}
+        {% assign season = celebration.season %}
+        <div class="col-12">
+            <h2>Season {{ celebration.season | replace: 'L', 'Legacy ' }}</h2>
+        </div>
+    {% endif %}
+
+    {% if celebration.youtube %}
         <div class="col-12 col-xl-4 col-md-6">
             {% assign desc = celebration.name | append: ' (' | append: celebration.time | append: ')' %}
             {% include post/youtube.html id=celebration.youtube desc=desc %}
         </div>
-    {% endfor %}
+    {% endif %}
+{% endfor %}
 </div>
-
 
 </div>

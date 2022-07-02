@@ -1,39 +1,99 @@
+- name: Leap of Faith
+  youtube: _wD8zv-cSTA
+  time: "0:13"
+  season: 1
+
+- name: Big Cheese
+  youtube:
+  time: ""
+  season: 1
+
+- name: "I'm with Winner'"
+  youtube:
+  time: ""
+  season: 1
+
+- name: Rhino Rodeo
+  youtube:
+  time: ""
+  season: 1
+
+
+
 - name: Zero's Surprise
   youtube: VxsO-D3qlyE
   time: "0:17"
-- name: Super Guy
-  youtube: Sc6wC-qHA-I
-  time: "0:10"
-- name: Strong Guy
-  youtube: 9mH7BFVebUg
-  time: "0:09"
-- name: Robot Master
-  youtube: GSDeRO7BIAA
-  time: "0:11"
-- name: Plinth Catch
-  youtube: Rjh9gk-G4-k
-  time: "0:12"
-- name: Penguin Avalanche
-  youtube: Tq9KNiZPtPs
-  time: "0:12"
-- name: Magician
-  youtube: -JwySA10rTc
-  time: "0:13"
-- name: Knock Off
-  youtube: igzmZlg2Fnw
-  time: "0:13"
-- name: Jack in a box
-  youtube: AICbepL-uMc
-  time: "0:11"
-- name: Chest Open
-  youtube: CMn7t9UyM_s
-  time: "0:15"
-- name: Plinth Drop
-  youtube: c3tWCfX_UIs
-  time: "0:13"
-- name: Z-Snap
-  youtube: qUZyGGF4I6I
-  time: "0:09"
+  season: L6
+
 - name: Hooping Hotshot
   youtube: MDjLSrmZSJw
   time: "0:09"
+  season: L6
+
+- name: Trapeze Artiste
+  youtube:
+  time: ""
+  season: L6
+
+
+
+- name: Chest Open
+  youtube: CMn7t9UyM_s
+  time: "0:15"
+  season: L5
+
+
+
+- name: Super Guy
+  youtube: Sc6wC-qHA-I
+  time: "0:10"
+  season: L3
+
+- name: Plinth Catch
+  youtube: Rjh9gk-G4-k
+  time: "0:12"
+  season: L3
+
+- name: Penguin Avalanche
+  youtube: Tq9KNiZPtPs
+  time: "0:12"
+  season: L3
+
+
+
+- name: Magician
+  youtube: -JwySA10rTc
+  time: "0:13"
+  season: L2
+
+- name: Strong Guy
+  youtube: 9mH7BFVebUg
+  time: "0:09"
+  season: L2
+
+
+
+- name: Knock Off
+  youtube: igzmZlg2Fnw
+  time: "0:13"
+  season: L1
+
+- name: Jack in a box
+  youtube: AICbepL-uMc
+  time: "0:11"
+  season: L1
+
+- name: Plinth Drop
+  youtube: c3tWCfX_UIs
+  time: "0:13"
+  season: L1
+
+- name: Z-Snap
+  youtube: qUZyGGF4I6I
+  time: "0:09"
+  season: L1
+
+- name: Robot Master
+  youtube: GSDeRO7BIAA
+  time: "0:11"
+  season: L1
