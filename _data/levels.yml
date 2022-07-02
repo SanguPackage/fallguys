@@ -8,7 +8,7 @@
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line!
   qualify: 75
-  added: 2.5
+  added: L2.5
 
 
 - name: Dizzy Heights
@@ -20,7 +20,7 @@
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line
   qualify: 75
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=UeNlHx20jvw
 
 
@@ -33,7 +33,7 @@
   objective: Race to the finish!
   howto: Break through doors and race to the finish line - some are real, some are fake!
   qualify: 75
-  added: 1
+  added: L1
 
 
 - name: Freezy Peak
@@ -45,7 +45,7 @@
   objective: Race to the finish!
   howto: Scale the frozen mountain to reach the finish line at the peak!
   qualify: 60
-  added: 3
+  added: L3
 
 
 - name: Fruit Chute
@@ -57,7 +57,7 @@
   objective: Race to the finish!
   howto: Dodge the flying fruit and race up the conveyor belt to reach the finish line!
   qualify: 60
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=Eb_skLn6P5A
 
 
@@ -70,7 +70,7 @@
   objective: Race to the finish!
   howto: Avoid the moving doors and race to the finish line!
   qualify: 75
-  added: 1
+  added: L1
 
 
 - name: Hit Parade
@@ -83,7 +83,7 @@
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line!
   qualify: 75
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=4NXTvVXDTaI
 
 
@@ -96,7 +96,7 @@
   objective: Race to the finish!
   howto: Navigate the medieval obstacles and race to the finish line!
   qualify: 75
-  added: 2
+  added: L2
 
 
 - name: Lily Leapers
@@ -108,7 +108,7 @@
   objective: Race to the finish!
   howto: Bounce on the drums to make your way to the finish line!
   qualify: 75
-  added: 5
+  added: L5
 
 
 - name: Roll On
@@ -120,7 +120,7 @@
   objective: Race to the finish!
   howto: Navigate the rotating rings and race to the finish line!
   qualify: 75
-  added: 4
+  added: L4
 
 
 - name: See Saw
@@ -132,7 +132,7 @@
   objective: Race to the finish!
   howto: Run and balance across rows of see-saws to reach the finish line!
   qualify: 75
-  added: 1
+  added: L1
 
 
 - name: Short Circuit
@@ -144,7 +144,7 @@
   objective: Run 2 laps!
   howto: Navigate the futuristic obstacles and run laps around the track!
   qualify: 60
-  added: 4
+  added: L4
 
 
 - name: Ski Fall
@@ -156,7 +156,7 @@
   objective: Jump through holes!
   howto: Jump through the holes to score points!
   qualify: 60
-  added: 3
+  added: L3
 
 
 - name: Skyline Stumble
@@ -168,7 +168,7 @@
   objective: Race to the finish!
   howto: Navigate the futuristic obstacles and race to the finish line!
   qualify: 75
-  added: 4
+  added: L4
   verdict: >
     A fun starter level.
   timeout: ??
@@ -183,7 +183,7 @@
   objective: Race to the finish!
   howto: Outrun the rising slime and survive through obstacles to reach the finish line!
   qualify: ??
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=vPfbiaZR5i4
 
 
@@ -196,7 +196,7 @@
   objective: Race to the finish!
   howto: Outrun the rising slime and survive through obstacles to reach the finish line!
   qualify: ??
-  added: 4.5
+  added: L4.5
 
 
 - name: The Whirlygig
@@ -208,7 +208,7 @@
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line!
   qualify: 75
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=RM2VSKOH-FM
 
 
@@ -221,7 +221,7 @@
   objective: Find the path!
   howto: Avoid fake tiles and find the hidden path to reach the finish line!
   qualify: 60
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=cJNLXynpNvk
 
 
@@ -234,7 +234,7 @@
   objective: Race to the finish!
   howto: Navigate the jungle obstacles and race to the finish line!
   qualify: 75
-  added: 5
+  added: L5
 
 
 - name: Tundra Run
@@ -246,7 +246,7 @@
   objective: Race to the finish!
   howto: Navigate the frosty obstacles and race to the finish line!
   qualify: 70
-  added: 3
+  added: L3
 
 
 - name: Wall Guys
@@ -258,7 +258,7 @@
   objective: Scale the walls!
   howto: "Use &lt;grab&gt; to GRAB and move blocks - create paths and jump along to cross walls and reach the finish line!"
   qualify: 60
-  added: 2
+  added: L2
   fallguystv: https://www.youtube.com/watch?v=0kCmoONCJ38
 
 
@@ -272,7 +272,7 @@
   objective: Don't fall off!
   howto: Avoid the flying futuristic projectiles and stay on top of the see saw!
   qualify: 60
-  added: 4
+  added: L4
 
 
 
@@ -285,7 +285,7 @@
   objective: Don't fall off!
   howto: Avoid the moving walls and don't fall off the platform!
   qualify: ??
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=WD9s8g-no4A
   fallguystv_info: "The trick to get on the edge on Fall Guys TV actually doesn't work anymore except on the new 5.1 platform variants."
 
@@ -299,7 +299,7 @@
   objective: Don't fall off!
   howto: Navigate the futuristic obstacles, stay on top of the hoverboard, and race to the finish line!
   qualify: ??
-  added: 4
+  added: L4
 
 
 - name: Jump Club
@@ -311,7 +311,7 @@
   objective: Don't fall off!
   howto: Avoid the swinging beams and don't fall off the platform!
   qualify: 60
-  added: 1
+  added: L1
 
 
 - name: Roll Out
@@ -323,7 +323,7 @@
   objective: Don't fall off!
   howto: Move between rotating rings to avoid falling into the slime!
   qualify: 60
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=W3ZxGSmU-HE
 
 
@@ -336,7 +336,7 @@
   objective: Don't get knocked out!
   howto: Try not to break the ice and don't fall out the bowl!
   qualify: ??
-  added: 3.5
+  added: L3.5
 
 
 - name: Stompin' Ground
@@ -348,7 +348,7 @@
   objective: Don't get knocked out!
   howto: Avoid the charging Rhinos and stay inside the arena!
   qualify: ??
-  added: 5
+  added: L5
 
 
 - name: Button Bashers
@@ -360,7 +360,7 @@
   objective: Press the buttons!
   howto: Press the button that lights up to score points and defeat your rival!
   qualify: 50
-  added: 4.5
+  added: L4.5
 
 
 - name: Bubble Trouble
@@ -372,7 +372,7 @@
   objective: Pop bubbles!
   howto: Bubbles will appear in different zones throughout the arena, JUMP into them to pop them and to score points to win!
   qualify: 60
-  added: 5
+  added: L5
 
 
 - name: Hoopsie Legends
@@ -384,7 +384,7 @@
   objective: Jump through hoops!
   howto: JUMP and/or DIVE through hoops to score 6 points!
   qualify: 60
-  added: 2
+  added: L2
 
 
 - name: Pegwin Pool Party
@@ -396,7 +396,7 @@
   objective: Hold that penguin!
   howto: Grab and hold onto a Penguin to score points!
   qualify: 60
-  added: 5
+  added: L5
 
 
 - name: Tail Tag
@@ -408,7 +408,7 @@
   objective: Grab a tail!
   howto: "Some players start with tails, some don't - use &lt;grab&gt; to GRAB a tail and make sure you have one when the timer runs out!"
   qualify: 50
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=woDDw2GutVg
 
 
@@ -422,7 +422,7 @@
   objective: Match the icon on the screen to avoid the slime!
   howto: Memorize the icons on the tiles - when an icon is displayed on the screen, move to a matching tile to avoid falling in the slime!
   qualify: ??
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=-ApT2oIbm9I
 
 
@@ -436,7 +436,7 @@
   objective: Score points!
   howto: Score points by getting balls into the opposing team's hoops - work together to get the win!
   qualify: 50
-  added: 4
+  added: L4
 
 
 - name: Egg Scramble
@@ -449,7 +449,7 @@
   objective: Collect the eggs!
   howto: "Use &lt;grab&gt; to GRAB eggs - store them in your team's nest to score points!"
   qualify: 2/3
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=4LACKvJYzrA
 
 - name: Egg Siege
@@ -462,7 +462,7 @@
   objective: Collect the eggs!
   howto: "Use &lt;grab&gt; to GRAB eggs - store them in your team's nest to score points!"
   qualify: 2/3
-  added: 2
+  added: L2
 
 
 - name: Fall Ball
@@ -476,7 +476,7 @@
   objective: Score goals!
   howto: Score goals by getting balls into the opposing team's - work together to get the win!
   qualify: 50
-  added: 1
+  added: L1
 
 
 - name: Hoarders
@@ -489,7 +489,7 @@
   objective: Hoard the balls!
   howto: Keep balls in your area to earn points for your team!
   qualify: 2/3
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=vKX1k_EguO4
 
 
@@ -503,7 +503,7 @@
   objective: Jump through hoops!
   howto: JUMP and/or DIVE through hoops to score points for your team!
   qualify: 2/3
-  added: 1
+  added: L1
 
 
 - name: Jinxed
@@ -518,7 +518,7 @@
   objective: Don't get jinxed!
   howto: The first team to get completely Jinxed are eliminated! When you get caught, GRAB the opposing team to Jinx them!
   qualify: 50
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=Y6HhOhAd0Ok
 
 
@@ -532,7 +532,7 @@
   objective: Hold that penguin!
   howto: Grab and hold onto a Penguin to score points for your team!
   qualify: 2/3
-  added: 3
+  added: L3
 
 
 - name: Power Trip
@@ -546,7 +546,7 @@
   objective: Colour the tiles!
   howto: GRAB the batteries and RUN across the tiles to re-colour the field!
   qualify: 50
-  added: 4
+  added: L4
 
 
 - name: Rock 'n' Roll
@@ -559,7 +559,7 @@
   objective: Push your ball!
   howto: Work together to PUSH your ball to the finish line before the other teams!
   qualify: 2/3
-  added: 1
+  added: L1
 
 
 - name: Snowy Scrap
@@ -572,7 +572,7 @@
   objective: Push your snowball!
   howto: Push your snowball through snow to grow it to max size!
   qualify: 2/3
-  added: 3
+  added: L3
 
 
 - name: Team Tail Tag
@@ -585,7 +585,7 @@
   objective: Grab a tail!
   howto: "Use &lt;grab&gt; to GRAB a tail - make sure that your team has more tails than the rest when timer runs out!"
   qualify: 75
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=PXN4W39vjgo
 
 
@@ -599,7 +599,7 @@
   objective: Grab the crown!
   howto: "Reach the top of the mountain first and use &lt;grab&gt; to GRAB the CROWN!"
   qualify: 1
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=GpDniO7Wbz8
 
 
@@ -614,7 +614,7 @@
   objective: Last one standing!
   howto: Floor pieces fall away when you stand on them - keep moving and survive longest to WIN the CROWN!
   qualify: 1
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=-MfjBp3MMb8
 
 
@@ -629,7 +629,7 @@
   objective: Last one standing!
   howto: JUMP over the spinning beam and avoid the falling floor to WIN the CROWN!
   qualify: 1
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=JzdPuBWNdlQ
   timeout: 5:00
 
@@ -644,7 +644,7 @@
   objective: Grab the Crown!
   howto: Break through doors to reach the crown at the end of the maze - some are real, some are fake!
   qualify: 1
-  added: 5
+  added: L5
 
 
 - name: Roll Off
@@ -657,7 +657,7 @@
   objective: Don't fall Off!
   howto: Move between rotating rings to avoid the rising slime!
   qualify: 1
-  added: 3
+  added: L3
 
 
 - name: Royal Fumble
@@ -670,7 +670,7 @@
   objective: Grab the tail!
   howto: "Use &lt;grab&gt; to GRAB the TAIL and make sure you're wearing it when the timer runs out to WIN!"
   qualify: 1
-  added: 1
+  added: L1
   fallguystv: https://www.youtube.com/watch?v=1jd4JJOpsGM
 
 
@@ -685,7 +685,7 @@
   objective: Don't fall through!
   howto: Stay atop the cracking ice to avoid the slime below!
   qualify: 1
-  added: 3
+  added: L3
 
 - name: Full Tilt
   exists: true
@@ -693,7 +693,7 @@
   objective: Race to the finish!
   howto: Run and balance across rows of 360 see-saws to reach the finish line!
   qualify: 70
-  added: 6
+  added: L6
 
 - name: Party Promenade
   exists: true
@@ -701,7 +701,7 @@
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line!
   qualify: 70
-  added: 6
+  added: L6
 
 - name: Pipe Dream
   exists: true
@@ -709,7 +709,7 @@
   objective: Race to the finish!
   howto: Navigate the pipes to reach the finish line!
   qualify: 60
-  added: 6
+  added: L6
 
 - name: Sum Fruit
   exists: true
@@ -717,7 +717,7 @@
   objective: Count the fruit!
   howto: Count the fruit. Avoid the rising slime. When the screens show the quantity of a type of fruit, stand on the tile matching that fruit to survive!
   qualify: ??
-  added: 5.Fun
+  added: L5.Fun
 
 - name: Sweet Thieves
   exists: true
@@ -725,7 +725,7 @@
   objective: "Thieves: Steal candy, avoid guardians! Guardians: Defend candy, capture thieves!"
   howto: "Thieves: Steal candy and avoid capture within the time limit! Use HoldToWalk to walk and stay invisible! Guardians: Defend the candy and capture all Thieves!"
   qualify: "The 4 guardians or 8 thieves"
-  added: 6.5
+  added: L6.5
 
 - name: Airtime
   exists: true
@@ -733,7 +733,7 @@
   objective: Stay in the zone!
   howto: Stay in the score zone to score points! Use the pipes to get back to the score zone if you fall!
   qualify: 60
-  added: 6
+  added: L6
 
 - name: Leading Light
   exists: true
@@ -741,4 +741,67 @@
   objective: Stay in the spotlight!
   howto: Stay in the moving spotlight to earn points!
   qualify: 75
-  added: 6
+  added: L6
+
+- name: Blast Ball
+  exists: true
+  type: final
+  objective: Last one standing!
+  howto: Pick up the BLAST BALLS and throw them to KNOCK out other beans!
+  qualify: 1
+  added: 1
+  timeout: '04:30'
+
+- name: Bounce Party
+  exists: true
+  type: hunt
+  objective: Bounce through hoops!
+  howto: Bounce through the hoops to score points!
+  qualify: 70
+  added: 1
+  timeout: '05:00'
+
+- name: Hex-A-Ring
+  exists: true
+  type: final
+  objective: Stay on the ring!
+  howto: Be one of the last beans on the rotating ring of tiles!
+  qualify: 1
+  added: 1
+  timeout: '05:00'
+
+- name: Speed Circuit
+  exists: true
+  type: race
+  objective: Run 2 laps!
+  howto: Navigate the obstacles and race 2 laps around the course!
+  qualify: 60
+  added: 1
+  timeout: '05:00'
+
+- name: The Swiveller
+  exists: true
+  type: survival
+  objective: Run from the fan!
+  howto: Run away from the fan, avoid obstacles and don't fall off!
+  qualify: 60
+  added: 1
+  timeout: '03:00'
+
+- name: Track Attack
+  exists: true
+  type: race
+  objective: Race to the finish!
+  howto: Navigate the obstacles along this perilous racetrack and reach the finish!
+  qualify: 70
+  added: 1
+
+- name: Volleyfall
+  exists: true
+  type: hunt
+  objective: Hit the opponent's floor!
+  howto: Knock the ball to the opposite side and touch the floor to score points!
+  qualify: 50
+  added: 1
+  timeout: '01:40'
+
