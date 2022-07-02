@@ -102,7 +102,7 @@
 - name: Lily Leapers
   exists: true
   type: race
-  sort_score: 86
+  sort_score: 90
   score:
     lao: 86
   objective: Race to the finish!
@@ -690,6 +690,7 @@
 - name: Full Tilt
   exists: true
   type: race
+  sort_score: 40
   objective: Race to the finish!
   howto: Run and balance across rows of 360 see-saws to reach the finish line!
   qualify: 70
@@ -698,6 +699,7 @@
 - name: Party Promenade
   exists: true
   type: race
+  sort_score: 50
   objective: Race to the finish!
   howto: Navigate the obstacles and race to the finish line!
   qualify: 70
@@ -706,6 +708,7 @@
 - name: Pipe Dream
   exists: true
   type: race
+  sort_score: 60
   objective: Race to the finish!
   howto: Navigate the pipes to reach the finish line!
   qualify: 60
@@ -714,6 +717,7 @@
 - name: Sum Fruit
   exists: true
   type: logic
+  sort_score: 30
   objective: Count the fruit!
   howto: Count the fruit. Avoid the rising slime. When the screens show the quantity of a type of fruit, stand on the tile matching that fruit to survive!
   qualify: ??
@@ -722,6 +726,7 @@
 - name: Sweet Thieves
   exists: true
   type: invisibeans
+  sort_score: 85
   objective: "Thieves: Steal candy, avoid guardians! Guardians: Defend candy, capture thieves!"
   howto: "Thieves: Steal candy and avoid capture within the time limit! Use HoldToWalk to walk and stay invisible! Guardians: Defend the candy and capture all Thieves!"
   qualify: "The 4 guardians or 8 thieves"
@@ -730,6 +735,7 @@
 - name: Airtime
   exists: true
   type: hunt
+  sort_score: 75
   objective: Stay in the zone!
   howto: Stay in the score zone to score points! Use the pipes to get back to the score zone if you fall!
   qualify: 60
@@ -738,6 +744,7 @@
 - name: Leading Light
   exists: true
   type: hunt
+  sort_score: 55
   objective: Stay in the spotlight!
   howto: Stay in the moving spotlight to earn points!
   qualify: 75
@@ -746,6 +753,7 @@
 - name: Blast Ball
   exists: true
   type: final
+  sort_score: 85
   objective: Last one standing!
   howto: Pick up the BLAST BALLS and throw them to KNOCK out other beans!
   qualify: 1
@@ -755,6 +763,7 @@
 - name: Bounce Party
   exists: true
   type: hunt
+  sort_score: 70
   objective: Bounce through hoops!
   howto: Bounce through the hoops to score points!
   qualify: 70
@@ -764,6 +773,7 @@
 - name: Hex-A-Ring
   exists: true
   type: final
+  sort_score: 100
   objective: Stay on the ring!
   howto: Be one of the last beans on the rotating ring of tiles!
   qualify: 1
@@ -773,6 +783,7 @@
 - name: Speed Circuit
   exists: true
   type: race
+  sort_score: 88
   objective: Run 2 laps!
   howto: Navigate the obstacles and race 2 laps around the course!
   qualify: 60
@@ -782,6 +793,7 @@
 - name: The Swiveller
   exists: true
   type: survival
+  sort_score: 75
   objective: Run from the fan!
   howto: Run away from the fan, avoid obstacles and don't fall off!
   qualify: 60
@@ -791,6 +803,7 @@
 - name: Track Attack
   exists: true
   type: race
+  sort_score: 70
   objective: Race to the finish!
   howto: Navigate the obstacles along this perilous racetrack and reach the finish!
   qualify: 70
@@ -799,9 +812,9 @@
 - name: Volleyfall
   exists: true
   type: hunt
+  sort_score: 90
   objective: Hit the opponent's floor!
   howto: Knock the ball to the opposite side and touch the floor to score points!
   qualify: 50
   added: 1
   timeout: '01:40'
-
