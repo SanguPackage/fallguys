@@ -59,3 +59,42 @@
         }
     }
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: #333333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer, .footer {
+    a, a:link, a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        font-size: 26px;
+        margin-right: 8px;
+
+        &.fa-home {
+            color: white;
+        }
+
+        &.fa-twitter {
+            color: #1DA1F2;
+        }
+
+        &.fa-youtube {
+            color: #FF0000;
+        }
+    }
+}
