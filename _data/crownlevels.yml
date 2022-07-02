@@ -306,4 +306,24 @@
   type: upper
   name: Golden Knight
   crowns: 3039
+  next: 250
+- level: 51
+  type: lower
+  name: Golden Dragon
+  crowns: 3289
+  next: 300
+- level: 52
+  type: upper
+  name: Golden Dragon
+  crowns: 3589
+  next: 350
+- level: 53
+  type: lower
+  name: Marblellous
+  crowns: 3939
+  next: 561
+- level: 54
+  type: upper
+  name: Marblellous
+  crowns: 4500
   next:
