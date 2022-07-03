@@ -34,6 +34,17 @@ layout: default
         </div>
     </h1>
 
+    {% if page.season and page.season.s1 and page.season.s1.size %}
+        <div class="alert alert-info">
+            <b>Season 1 Updates:</b>
+            <ul>
+                {% for noti in page.season.s1 %}
+                    <li>{{ noti }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
     <!-- <div class="row">
         <h4>Our Verdict</h4>
         <div>Score: {{ level.score.lao }}%</div>

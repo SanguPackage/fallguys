@@ -663,7 +663,7 @@
   added: L1
   fallguystv: https://www.youtube.com/watch?v=GpDniO7Wbz8
   timeout: '5:00'
-  timeout_result: lose
+  timeout_result: 'Everyone loses'
 
 
 - name: Hex-A-Gone
@@ -710,7 +710,7 @@
   qualify: 1
   added: L5
   timeout: '5:00'
-  timeout_result: lose
+  timeout_result: 'Everyone loses'
 
 
 - name: Roll Off
