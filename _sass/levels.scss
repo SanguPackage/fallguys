@@ -85,6 +85,27 @@
         padding: 0.25em 1em;
         border-radius: 1em;
         text-transform: uppercase;
+        margin-right: 8px;
+
+        &.medals {
+            background-color: transparent;
+            border: 2px solid #28a745;
+
+            .fa:not(:first-child) {
+                margin-left: 12px;
+            }
+        }
+
+        &.timeout {
+            color: #212529;
+            background-color: #ffc107;
+            color: white;
+        }
+
+        &.season {
+            background-color: #17a2b8;
+            color: white;
+        }
 
         &.race {
             background: #05e06d;

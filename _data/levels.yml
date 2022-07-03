@@ -9,6 +9,7 @@
   howto: Navigate the obstacles and race to the finish line!
   qualify: 75
   added: L2.5
+  timeout: '3:30'
 
 
 - name: Dizzy Heights
@@ -22,6 +23,7 @@
   qualify: 75
   added: L1
   fallguystv: https://www.youtube.com/watch?v=UeNlHx20jvw
+  timeout: '3:00'
 
 
 - name: Door Dash
@@ -34,6 +36,7 @@
   howto: Break through doors and race to the finish line - some are real, some are fake!
   qualify: 75
   added: L1
+  timeout: '3:00'
 
 
 - name: Freezy Peak
@@ -46,6 +49,7 @@
   howto: Scale the frozen mountain to reach the finish line at the peak!
   qualify: 60
   added: L3
+  timeout: '5:00'
 
 
 - name: Fruit Chute
@@ -59,6 +63,7 @@
   qualify: 60
   added: L1
   fallguystv: https://www.youtube.com/watch?v=Eb_skLn6P5A
+  timeout: '3:00'
 
 
 - name: Gate Crash
@@ -71,6 +76,7 @@
   howto: Avoid the moving doors and race to the finish line!
   qualify: 75
   added: L1
+  timeout: '3:00'
 
 
 - name: Hit Parade
@@ -85,6 +91,7 @@
   qualify: 75
   added: L1
   fallguystv: https://www.youtube.com/watch?v=4NXTvVXDTaI
+  timeout: '3:00'
 
 
 - name: Knight Fever
@@ -97,6 +104,7 @@
   howto: Navigate the medieval obstacles and race to the finish line!
   qualify: 75
   added: L2
+  timeout: '3:00'
 
 
 - name: Lily Leapers
@@ -109,6 +117,7 @@
   howto: Bounce on the drums to make your way to the finish line!
   qualify: 75
   added: L5
+  timeout: '5:00'
 
 
 - name: Roll On
@@ -121,6 +130,7 @@
   howto: Navigate the rotating rings and race to the finish line!
   qualify: 75
   added: L4
+  timeout: '2:00'
 
 
 - name: See Saw
@@ -133,6 +143,7 @@
   howto: Run and balance across rows of see-saws to reach the finish line!
   qualify: 75
   added: L1
+  timeout: '3:00'
 
 
 - name: Short Circuit
@@ -145,6 +156,7 @@
   howto: Navigate the futuristic obstacles and run laps around the track!
   qualify: 60
   added: L4
+  timeout: '5:00'
 
 
 - name: Ski Fall
@@ -157,6 +169,7 @@
   howto: Jump through the holes to score points!
   qualify: 60
   added: L3
+  timeout: '5:00'
 
 
 - name: Skyline Stumble
@@ -171,7 +184,7 @@
   added: L4
   verdict: >
     A fun starter level.
-  timeout: ??
+  timeout: '3:00'
 
 
 - name: Slime Climb
@@ -185,6 +198,7 @@
   qualify: ??
   added: L1
   fallguystv: https://www.youtube.com/watch?v=vPfbiaZR5i4
+  timeout: '2:20'
 
 
 - name: The Slimescraper
@@ -197,6 +211,7 @@
   howto: Outrun the rising slime and survive through obstacles to reach the finish line!
   qualify: ??
   added: L4.5
+  timeout: '3:10'
 
 
 - name: The Whirlygig
@@ -210,6 +225,7 @@
   qualify: 75
   added: L1
   fallguystv: https://www.youtube.com/watch?v=RM2VSKOH-FM
+  timeout: '3:00'
 
 
 - name: Tip Toe
@@ -223,6 +239,7 @@
   qualify: 60
   added: L1
   fallguystv: https://www.youtube.com/watch?v=cJNLXynpNvk
+  timeout: '5:00'
 
 
 - name: Treetop Tumble
@@ -235,6 +252,7 @@
   howto: Navigate the jungle obstacles and race to the finish line!
   qualify: 75
   added: L5
+  timeout: '3:00'
 
 
 - name: Tundra Run
@@ -247,6 +265,7 @@
   howto: Navigate the frosty obstacles and race to the finish line!
   qualify: 70
   added: L3
+  timeout: '3:00'
 
 
 - name: Wall Guys
@@ -260,6 +279,7 @@
   qualify: 60
   added: L2
   fallguystv: https://www.youtube.com/watch?v=0kCmoONCJ38
+  timeout: '5:00'
 
 
 - name: Big Shots
@@ -273,6 +293,7 @@
   howto: Avoid the flying futuristic projectiles and stay on top of the see saw!
   qualify: 60
   added: L4
+  timeout: '1:30'
 
 
 
@@ -288,6 +309,7 @@
   added: L1
   fallguystv: https://www.youtube.com/watch?v=WD9s8g-no4A
   fallguystv_info: "The trick to get on the edge on Fall Guys TV actually doesn't work anymore except on the new 5.1 platform variants."
+  timeout: '1:45'
 
 
 - name: Hoverboard Heroes
@@ -300,7 +322,7 @@
   howto: Navigate the futuristic obstacles, stay on top of the hoverboard, and race to the finish line!
   qualify: ??
   added: L4
-
+  timeout: '2:20'
 
 - name: Jump Club
   exists: true
@@ -312,6 +334,7 @@
   howto: Avoid the swinging beams and don't fall off the platform!
   qualify: 60
   added: L1
+  timeout: '1:30'
 
 
 - name: Roll Out
@@ -325,6 +348,7 @@
   qualify: 60
   added: L1
   fallguystv: https://www.youtube.com/watch?v=W3ZxGSmU-HE
+  timeout: '2:30'
 
 
 - name: Snowball Survival
@@ -337,6 +361,7 @@
   howto: Try not to break the ice and don't fall out the bowl!
   qualify: ??
   added: L3.5
+  timeout: '1:00'
 
 
 - name: Stompin' Ground
@@ -349,6 +374,7 @@
   howto: Avoid the charging Rhinos and stay inside the arena!
   qualify: ??
   added: L5
+  timeout: '1:10'
 
 
 - name: Button Bashers
@@ -361,6 +387,7 @@
   howto: Press the button that lights up to score points and defeat your rival!
   qualify: 50
   added: L4.5
+  timeout: '1:30'
 
 
 - name: Bubble Trouble
@@ -373,6 +400,7 @@
   howto: Bubbles will appear in different zones throughout the arena, JUMP into them to pop them and to score points to win!
   qualify: 60
   added: L5
+  timeout: '5:00'
 
 
 - name: Hoopsie Legends
@@ -385,6 +413,7 @@
   howto: JUMP and/or DIVE through hoops to score 6 points!
   qualify: 60
   added: L2
+  timeout: '5:00'
 
 
 - name: Pegwin Pool Party
@@ -397,6 +426,7 @@
   howto: Grab and hold onto a Penguin to score points!
   qualify: 60
   added: L5
+  timeout: '5:00'
 
 
 - name: Tail Tag
@@ -410,6 +440,12 @@
   qualify: 50
   added: L1
   fallguystv: https://www.youtube.com/watch?v=woDDw2GutVg
+  medals:
+    gold: 80
+    silver: 60
+    bronze: 30
+    desc: "seconds tail held and qualified"
+  timeout: '1:30'
 
 
 - name: Perfect Match
@@ -424,6 +460,7 @@
   qualify: ??
   added: L1
   fallguystv: https://www.youtube.com/watch?v=-ApT2oIbm9I
+  timeout: '1:20'
 
 
 - name: Basketfall
@@ -437,6 +474,11 @@
   howto: Score points by getting balls into the opposing team's hoops - work together to get the win!
   qualify: 50
   added: L4
+  medals:
+    gold: 20
+    silver: 10
+    bronze: 3
+  timeout: '1:30'
 
 
 - name: Egg Scramble
@@ -451,6 +493,7 @@
   qualify: 2/3
   added: L1
   fallguystv: https://www.youtube.com/watch?v=4LACKvJYzrA
+  timeout: '2:00'
 
 - name: Egg Siege
   exists: true
@@ -463,6 +506,7 @@
   howto: "Use &lt;grab&gt; to GRAB eggs - store them in your team's nest to score points!"
   qualify: 2/3
   added: L2
+  timeout: '2:00'
 
 
 - name: Fall Ball
@@ -477,6 +521,11 @@
   howto: Score goals by getting balls into the opposing team's - work together to get the win!
   qualify: 50
   added: L1
+  medals:
+    gold: 10
+    silver: 5
+    bronze: 3
+  timeout: '1:30'
 
 
 - name: Hoarders
@@ -491,6 +540,7 @@
   qualify: 2/3
   added: L1
   fallguystv: https://www.youtube.com/watch?v=vKX1k_EguO4
+  timeout: '1:30'
 
 
 - name: Hoopsie Daisy
@@ -504,6 +554,7 @@
   howto: JUMP and/or DIVE through hoops to score points for your team!
   qualify: 2/3
   added: L1
+  timeout: '2:00'
 
 
 - name: Jinxed
@@ -520,6 +571,7 @@
   qualify: 50
   added: L1
   fallguystv: https://www.youtube.com/watch?v=Y6HhOhAd0Ok
+  timeout: '5:00'
 
 
 - name: Pegwin Pursuit
@@ -533,6 +585,7 @@
   howto: Grab and hold onto a Penguin to score points for your team!
   qualify: 2/3
   added: L3
+  timeout: '2:00'
 
 
 - name: Power Trip
@@ -547,6 +600,11 @@
   howto: GRAB the batteries and RUN across the tiles to re-colour the field!
   qualify: 50
   added: L4
+  medals:
+    gold: 325
+    silver: 285
+    bronze: 245
+  timeout: '1:30'
 
 
 - name: Rock 'n' Roll
@@ -560,6 +618,7 @@
   howto: Work together to PUSH your ball to the finish line before the other teams!
   qualify: 2/3
   added: L1
+  timeout: '2:00'
 
 
 - name: Snowy Scrap
@@ -573,6 +632,7 @@
   howto: Push your snowball through snow to grow it to max size!
   qualify: 2/3
   added: L3
+  timeout: '3:00'
 
 
 - name: Team Tail Tag
@@ -587,6 +647,7 @@
   qualify: 75
   added: L1
   fallguystv: https://www.youtube.com/watch?v=PXN4W39vjgo
+  timeout: '1:30'
 
 
 - name: Fall Mountain
@@ -601,6 +662,8 @@
   qualify: 1
   added: L1
   fallguystv: https://www.youtube.com/watch?v=GpDniO7Wbz8
+  timeout: '5:00'
+  timeout_result: lose
 
 
 - name: Hex-A-Gone
@@ -616,6 +679,7 @@
   qualify: 1
   added: L1
   fallguystv: https://www.youtube.com/watch?v=-MfjBp3MMb8
+  timeout: '5:00'
 
 
 - name: Jump Showdown
@@ -645,6 +709,8 @@
   howto: Break through doors to reach the crown at the end of the maze - some are real, some are fake!
   qualify: 1
   added: L5
+  timeout: '5:00'
+  timeout_result: lose
 
 
 - name: Roll Off
@@ -658,6 +724,7 @@
   howto: Move between rotating rings to avoid the rising slime!
   qualify: 1
   added: L3
+  timeout: '5:00'
 
 
 - name: Royal Fumble
@@ -672,6 +739,7 @@
   qualify: 1
   added: L1
   fallguystv: https://www.youtube.com/watch?v=1jd4JJOpsGM
+  timeout: '1:30'
 
 
 - name: Thin Ice
@@ -686,6 +754,7 @@
   howto: Stay atop the cracking ice to avoid the slime below!
   qualify: 1
   added: L3
+  timeout: '5:00'
 
 - name: Full Tilt
   exists: true
@@ -695,6 +764,7 @@
   howto: Run and balance across rows of 360 see-saws to reach the finish line!
   qualify: 70
   added: L6
+  timeout: '3:00'
 
 - name: Party Promenade
   exists: true
@@ -704,6 +774,7 @@
   howto: Navigate the obstacles and race to the finish line!
   qualify: 70
   added: L6
+  timeout: '5:00'
 
 - name: Pipe Dream
   exists: true
@@ -713,6 +784,7 @@
   howto: Navigate the pipes to reach the finish line!
   qualify: 60
   added: L6
+  timeout: '5:00'
 
 - name: Sum Fruit
   exists: true
@@ -722,6 +794,7 @@
   howto: Count the fruit. Avoid the rising slime. When the screens show the quantity of a type of fruit, stand on the tile matching that fruit to survive!
   qualify: ??
   added: L5.Fun
+  timeout: '1:41'
 
 - name: Sweet Thieves
   exists: true
@@ -731,6 +804,7 @@
   howto: "Thieves: Steal candy and avoid capture within the time limit! Use HoldToWalk to walk and stay invisible! Guardians: Defend the candy and capture all Thieves!"
   qualify: "The 4 guardians or 8 thieves"
   added: L6.5
+  timeout: '3:00'
 
 - name: Airtime
   exists: true
@@ -740,6 +814,7 @@
   howto: Stay in the score zone to score points! Use the pipes to get back to the score zone if you fall!
   qualify: 60
   added: L6
+  timeout: '5:00'
 
 - name: Leading Light
   exists: true
@@ -749,6 +824,7 @@
   howto: Stay in the moving spotlight to earn points!
   qualify: 75
   added: L6
+  timeout: '5:00'
 
 - name: Blast Ball
   exists: true
@@ -759,6 +835,7 @@
   qualify: 1
   added: 1
   timeout: '04:30'
+  timeout_result: Every piece falls, last jump counts!
 
 - name: Bounce Party
   exists: true
@@ -808,6 +885,7 @@
   howto: Navigate the obstacles along this perilous racetrack and reach the finish!
   qualify: 70
   added: 1
+  timeout: ''
 
 - name: Volleyfall
   exists: true

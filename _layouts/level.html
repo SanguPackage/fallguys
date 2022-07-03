@@ -8,7 +8,22 @@ layout: default
     <h1 class="levels">
         <img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png">
         {{ level.name }}
-        <small style="font-size: 0.5em">{% include level/level-type.html type=level.type %}</small>
+        <small style="font-size: 0.5em">
+            {% include level/level-type.html type=level.type %}
+            {% include level/level-season.html season=level.added %}
+
+            <span class="level-badge timeout">
+                <i class="fa fa-stopwatch" title="{{ level.timeout_result }}"></i> {{ level.timeout }}
+            </span>
+
+            {% if level.medals %}
+                <span class="level-badge medals">
+                    <i class="fa fa-medal" style="color: gold"></i> {{ level.medals.gold }}
+                    <i class="fa fa-medal" style="color: silver"></i> {{ level.medals.silver }}
+                    <i class="fa fa-medal" style="color: #CD7F32"></i> {{ level.medals.bronze }}
+                </span>
+            {% endif %}
+        </small>
 
         <div style="float: right; font-size: 18px; margin-top: 10px;">
             {% if level.type == "final" %}
