@@ -3,22 +3,23 @@
   time: "0:13"
   season: 1
 
-- name: Big Cheese
-  youtube:
-  time: ""
+- name: Break it Down
+  youtube: bD-vhMHrrv4
+  time: "0:12"
   season: 1
+  price: 700
 
-- name: "I'm with Winner'"
-  youtube:
-  time: ""
+- name: "I'm with Winner"
+  youtube: h32QCxxGZ2Y
+  time: "0:11"
   season: 1
+  level: 52
 
 - name: Rhino Rodeo
-  youtube:
-  time: ""
+  youtube: _DU3Qa7XsZ8
+  time: "0:13"
   season: 1
-
-
+  level: 77
 
 - name: Zero's Surprise
   youtube: VxsO-D3qlyE
@@ -29,20 +30,12 @@
   youtube: MDjLSrmZSJw
   time: "0:09"
   season: L6
-
-- name: Trapeze Artiste
-  youtube:
-  time: ""
-  season: L6
-
-
+  price: 1000
 
 - name: Chest Open
   youtube: CMn7t9UyM_s
   time: "0:15"
   season: L5
-
-
 
 - name: Super Guy
   youtube: Sc6wC-qHA-I
@@ -59,8 +52,6 @@
   time: "0:12"
   season: L3
 
-
-
 - name: Magician
   youtube: -JwySA10rTc
   time: "0:13"
@@ -71,8 +62,6 @@
   time: "0:09"
   season: L2
 
-
-
 - name: Knock Off
   youtube: igzmZlg2Fnw
   time: "0:13"
@@ -82,6 +71,7 @@
   youtube: AICbepL-uMc
   time: "0:11"
   season: L1
+  price: 1000
 
 - name: Plinth Drop
   youtube: c3tWCfX_UIs
@@ -97,3 +87,4 @@
   youtube: GSDeRO7BIAA
   time: "0:11"
   season: L1
+  price: 1200
