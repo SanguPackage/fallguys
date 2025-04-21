@@ -13,7 +13,7 @@ permalink: /contributing-levels
 {% for page in site.levels %}
     {% if page.missing and page.missing.first != "" %}
         <div class="col-4">
-            <a href="{{ page.url }}.html">{{ page.title }}</a>:
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>:
             <ul>
                 {% for missing in page.missing %}
                     {% if missing != blank %}
