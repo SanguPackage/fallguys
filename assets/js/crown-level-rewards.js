@@ -11,7 +11,8 @@ $(function() {
 
             $('table.crown-rewards tbody tr').each(function() {
                 var row = $(this);
-                if (row.hasClass(type)) {
+                if ((type !== 'other' && row.hasClass(type))
+                    || (type === 'other' && (row.hasClass('faceplate') || row.hasClass('phrase') || row.hasClass('emoticon')))) {
                     row.show();
                 } else {
                     row.hide();
@@ -26,7 +27,13 @@ $(function() {
             if (isVisible) {
                 btn.removeClass('btn-primary');
                 btn.addClass('btn-light');
-                $('table.crown-rewards tbody tr.' + type).hide();
+                if (type !== 'other') {
+                    $('table.crown-rewards tbody tr.' + type).hide();
+                } else {
+                    $('table.crown-rewards tbody tr.faceplate').hide();
+                    $('table.crown-rewards tbody tr.phrase').hide();
+                    $('table.crown-rewards tbody tr.emoticon').hide();
+                }
 
                 // None selected == show all
                 var nonSelected = $('.crown-rewards-filters button.btn-primary').length === 0;
@@ -37,7 +44,13 @@ $(function() {
             } else {
                 btn.removeClass('btn-light');
                 btn.addClass('btn-primary');
-                $('table.crown-rewards tbody tr.' + type).show();
+                if (type !== 'other') {
+                    $('table.crown-rewards tbody tr.' + type).show();
+                } else {
+                    $('table.crown-rewards tbody tr.faceplate').show();
+                    $('table.crown-rewards tbody tr.phrase').show();
+                    $('table.crown-rewards tbody tr.emoticon').show();
+                }
             }
         }
     });
