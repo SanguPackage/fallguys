@@ -269,6 +269,7 @@
 
 
 - name: Wall Guys
+  vaulted: true
   exists: true
   type: race
   sort_score: 84
@@ -298,6 +299,7 @@
 
 
 - name: Block Party
+  vaulted: true
   exists: true
   type: survival
   sort_score: 50
@@ -767,6 +769,7 @@
   timeout: '3:00'
 
 - name: Party Promenade
+  vaulted: true
   exists: true
   type: race
   sort_score: 50
@@ -777,6 +780,7 @@
   timeout: '5:00'
 
 - name: Pipe Dream
+  vaulted: true
   exists: true
   type: race
   sort_score: 60

@@ -5,9 +5,15 @@
     {% assign hidden = "style='display: none'" %}
 {% endif %}
 
-<tr {{ hidden }}>
+<tr {{ hidden }} class="{% if level.vaulted %}vaulted{% endif %}">
     <td><img src="{{ site.baseurl }}/img/levels/{{ key }}-icon.png"></td>
     <td>
+        {% if level.vaulted %}
+            <span class="vaulted">
+                <i class="fas fa-lock fa-vault-icon"></i>
+                VAULTED
+            </span>
+        {% endif %}
         {% if level.exists %}
             <a href="{{ site.baseurl }}/levels/{{ key }}">{{ level.name }}</a>
         {% else %}
@@ -15,6 +21,8 @@
         {% endif %}
         <p class="d-inline d-md-block">{{ level.howto }}</p>
     </td>
-    <td class="d-none d-md-table-cell">{% include level/level-type.html type=level.type %}</td>
+    <td class="d-none d-md-table-cell">
+        {% include level/level-type.html type=level.type %}
+    </td>
     <!-- <td>{{ level.sort_score }}%</td> -->
 </tr>

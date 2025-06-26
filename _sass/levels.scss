@@ -79,6 +79,30 @@
 }
 
 .levels {
+    .vaulted {
+        color: #888;
+
+        img {
+            filter: grayscale(90%) brightness(1.1);
+            opacity: 0.75;
+            transition: filter 0.3s ease, opacity 0.3s ease;
+        }
+
+        a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .vaulted {
+            background: #f0f0f0;
+            color: #888;
+            border: 1px solid #ddd;
+            padding: 2px 8px;
+            margin-right: 6px;
+            display: inline-block;
+        }
+    }
+
     .level-badge {
         text-shadow: black 1px 1px;
         font-weight: bold;
