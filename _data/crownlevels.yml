@@ -3,327 +3,500 @@
   name: Kingswood
   crowns: 1
   next: 1
-  rarity: epic
+  rarity: rare
   primary: "#0C4011"
   secondary: "#C26700"
 - level: 3
-  type: lower
-  name: Crocodile
-  crowns: 2
-  next: 1
-  rarity: common
-- level: 4
   type: banner
   name: Balloon
-  crowns: 3
-  next: 2
-  rarity: epic
-- level: 5
+  crowns: 2
+  next: 1
+  rarity: rare
+- level: 4
   type: pattern
   name: Rosette
-  crowns: 5
-  next: 2
+  crowns: 3
+  next: 1
   rarity: epic
+- level: 5
+  type: lower
+  name: Colourful Lemur Tail
+  crowns: 4
+  next: 1
+  rarity: common
 - level: 6
   type: nickname
   name: Bouncy Bean
-  crowns: 7
-  next: 3
-  rarity:
+  crowns: 5
+  next: 1
+  rarity: common
 - level: 7
   type: upper
-  name: Crocodile
-  crowns: 10
-  next: 3
+  name: Electric Specs
+  crowns: 6
+  next: 1
   rarity: common
 - level: 8
   type: faceplate
-  name: Purple Haze
-  crowns: 13
-  next: 4
+  name: Purple Gaze
+  crowns: 7
+  next: 1
   rarity: uncommon
 - level: 9
+  type: colour
+  name: Bubblegum
+  crowns: 8
+  next: 1
+  rarity: common
+  primary: "#ff789a"
+  secondary: "#49ebff"
+- level: 10
+  type: lower
+  name: Flipper Pack
+  crowns: 9
+  next: 1
+  rarity: uncommon
+- level: 11
   type: banner
   name: Falling Rainbow
-  crowns: 17
-  next: 4
-  rarity: epic
-- level: 10
+  crowns: 10
+  next: 1
+  rarity: rare
+- level: 12
+  type: colour
+  name: Mint Chocolate
+  crowns: 11
+  next: 1
+  rarity: common
+  primary: "#14ff62"
+  secondary: "#5b292f"
+- level: 13
+  type: upper
+  name: Flights of Fancy
+  crowns: 12
+  next: 1
+  rarity: common
+- level: 14
   type: nickname
   name: Just Peachy
-  crowns: 21
-  next: 5
-  rarity:
-- level: 11
+  crowns: 13
+  next: 1
+  rarity: uncommon
+- level: 15
+  type: colour
+  name: Coral Blue
+  crowns: 14
+  next: 1
+  rarity: common
+  primary: "#5dc9ee"
+  secondary: "#de56f2"
+- level: 16
+  type: pattern
+  name: Crocoguy
+  crowns: 15
+  next: 1
+  rarity: rare
+- level: 17
+  type: colour
+  name: Traffic Light
+  crowns: 16
+  next: 1
+  rarity: common
+  primary: "#03ec65"
+  secondary: "#ff2d3d"
+- level: 18
   type: pattern
   name: Coral
-  crowns: 26
-  next: 7
+  crowns: 17
+  next: 1
   rarity: epic
-- level: 12
+- level: 19
   type: lower
-  name: Ice Cream
-  crowns: 33
-  next: 8
+  name: Electro Energy Bar
+  crowns: 18
+  next: 1
+  rarity: uncommon
+- level: 20
+  type: colour
+  name: Night Sky
+  crowns: 19
+  next: 1
   rarity: common
-- level: 13
+  primary: "#0a1926"
+  secondary: "#eae5d4"
+- level: 21
+  type: upper
+  name: Dapper Hat
+  crowns: 20
+  next: 1
+  rarity: common
+- level: 22
+  type: lower
+  name: Crocodile
+  crowns: 21
+  next: 1
+  rarity: rare
+- level: 23
+  type: colour
+  name: Orangeade
+  crowns: 22
+  next: 4
+  rarity: common
+  primary: "#ff6200"
+  secondary: "#ffc700"
+- level: 24
   type: colour
   name: Shimmering Sea
-  crowns: 41
-  next: 10
-  rarity: epic
+  crowns: 26
+  next: 7
+  rarity: rare
   primary: "#0D447D"
   secondary: "#FE8800"
-- level: 14
+- level: 25
   type: banner
   name: Fall Face
+  crowns: 33
+  next: 8
+  rarity: rare
+- level: 26
+  type: upper
+  name: Crocodile
+  crowns: 41
+  next: 10
+  rarity: rare
+- level: 27
+  type: lower
+  name: Ice Cream
   crowns: 51
   next: 12
-  rarity: epic
-- level: 15
+  rarity: rare
+- level: 28
   type: nickname
   name: Peak Performer
   crowns: 63
   next: 14
-  rarity:
-- level: 16
+  rarity: rare
+- level: 29
   type: upper
   name: Ice Cream
   crowns: 77
   next: 16
-  rarity: common
-- level: 17
+  rarity: rare
+- level: 30
   type: banner
   name: Ice Cold Crown
   crowns: 93
   next: 19
-  rarity: epic
-- level: 18
+  rarity: rare
+- level: 31
   type: lower
   name: Beanbot
   crowns: 112
   next: 22
-  rarity: uncommon
-- level: 19
+  rarity: epic
+- level: 32
   type: colour
   name: Starlight
   crowns: 134
   next: 26
-  rarity: epic
+  rarity: rare
   primary: "#302D2D"
   secondary: "#FF8800"
-- level: 20
+- level: 33
   type: pattern
   name: Decorated
   crowns: 160
-  next: 29
-  rarity: legendary
-- level: 21
+  next: 14
+  rarity: uncommon
+- level: 34
+  type: banner
+  name: Snack Break
+  crowns: 174
+  next: 15
+  rarity: rare
+- level: 35
   type: upper
   name: Beanbot
   crowns: 189
   next: 30
-  rarity: uncommon
-- level: 22
+  rarity: epic
+- level: 36
   type: nickname
   name: Dressed to Chill
   crowns: 219
-  next: 35
-  rarity:
-- level: 23
+  next: 15
+  rarity: rare
+- level: 37
+  type: lower
+  name: Dino Relic Belt
+  crowns: 234
+  next: 20
+  rarity: uncommon
+- level: 38
   type: lower
   name: Golden Witch
   crowns: 254
   next: 40
   rarity: legendary
-- level: 24
+- level: 39
   type: banner
   name: Tagged
   crowns: 294
   next: 45
-  rarity: epic
-- level: 25
+  rarity: rare
+- level: 40
   type: pattern
   name: Pop Art
   crowns: 339
-  next: 50
+  next: 25
   rarity: epic
-- level: 26
+- level: 41
+  type: banner
+  name: Stationery
+  crowns: 364
+  next: 25
+  rarity: rare
+- level: 42
   type: nickname
   name: The Biggest Fan
   crowns: 389
-  next: 55
-  rarity:
-- level: 27
+  next: 25
+  rarity: epic
+- level: 43
+  type: pattern
+  name: Beta
+  crowns: 414
+  next: 30
+  rarity: rare
+- level: 44
   type: upper
   name: Golden Witch
   crowns: 444
-  next: 60
+  next: 30
   rarity: legendary
-- level: 28
+- level: 45
+  type: pattern
+  name: Lederhosen
+  crowns: 474
+  next: 30
+  rarity: rare
+- level: 46
   type: banner
   name: Qualified
   crowns: 504
-  next: 65
-  rarity: epic
-- level: 29
+  next: 32
+  rarity: rare
+- level: 47
+  type: phrase
+  name: Sneaky... Sneaky...
+  crowns: 536
+  next: 33
+  rarity: rare
+- level: 48
   type: colour
   name: Freezy Dream
   crowns: 569
-  next: 70
-  rarity: epic
+  next: 35
+  rarity: rare
   primary: "#113C85"
   secondary: "#FF89AE"
-- level: 30
+- level: 49
+  type: upper
+  name: Goblin Cap
+  crowns: 604
+  next: 35
+  rarity: rare
+- level: 50
   type: lower
   name: Golden Chicken
   crowns: 639
   next: 75
   rarity: legendary
-- level: 31
+- level: 51
   type: pattern
   name: Arches
   crowns: 714
   next: 80
   rarity: epic
-- level: 32
+- level: 52
   type: nickname
   name: Jolly Bean
   crowns: 794
   next: 85
-  rarity:
-- level: 33
+  rarity: epic
+- level: 53
   type: colour
   name: Crown Master
   crowns: 879
   next: 90
-  rarity: legendary
+  rarity: epic
   primary: "#FF8700"
   secondary: "#040002"
-- level: 34
+- level: 54
   type: upper
   name: Golden Chicken
   crowns: 969
   next: 95
   rarity: legendary
-- level: 35
+- level: 55
   type: banner
   name: Hex-a-Gone King
   crowns: 1064
   next: 100
   rarity: epic
-- level: 36
+- level: 56
   type: colour
   name: Royal Carpet
   crowns: 1164
   next: 105
-  rarity: legendary
+  rarity: epic
   primary: "#BE0006"
   secondary: "#FF8701"
-- level: 37
+- level: 57
   type: lower
   name: Golden Wolf
   crowns: 1269
   next: 110
   rarity: legendary
-- level: 38
+- level: 58
   type: banner
   name: Number One
   crowns: 1379
   next: 115
   rarity: epic
-- level: 39
+- level: 59
   type: colour
   name: Untouchable
   crowns: 1494
   next: 120
-  rarity: legendary
+  rarity: epic
   primary: "#FB8900"
   secondary: "#FFFDFA"
-- level: 40
+- level: 60
   type: pattern
   name: Coral Fade
   crowns: 1614
   next: 125
   rarity: epic
-- level: 41
+- level: 61
   type: upper
   name: Golden Wolf
   crowns: 1739
   next: 130
   rarity: legendary
-- level: 42
+- level: 62
   type: pattern
   name: Regal
   crowns: 1869
   next: 135
-  rarity: legendary
-- level: 43
+  rarity: rare
+- level: 63
   type: colour
   name: Regal Purple
   crowns: 2004
   next: 140
-  rarity: legendary
+  rarity: epic
   primary: "#760055"
   secondary: "#FF8C02"
-- level: 44
+- level: 64
   type: banner
   name: Rosette
   crowns: 2144
   next: 145
   rarity: epic
-- level: 45
+- level: 65
   type: pattern
   name: Tiger Stripes
   crowns: 2289
   next: 150
-  rarity: legendary
-- level: 46
+  rarity: rare
+- level: 66
   type: nickname
   name: Barnstormer
   crowns: 2439
   next: 150
-  rarity:
-- level: 47
+  rarity: epic
+- level: 67
   type: pattern
   name: Abstract
   crowns: 2589
   next: 150
-  rarity: legendary
-- level: 48
+  rarity: uncommon
+- level: 68
   type: lower
   name: Golden Knight
   crowns: 2739
   next: 150
   rarity: legendary
-- level: 49
+- level: 69
   type: banner
   name: Golden
   crowns: 2889
   next: 150
   rarity: epic
-- level: 50
+- level: 70
   type: upper
   name: Golden Knight
   crowns: 3039
   next: 250
-- level: 51
+  rarity: legendary
+- level: 71
   type: lower
   name: Golden Dragon
   crowns: 3289
   next: 300
-- level: 52
+  rarity: legendary
+- level: 72
   type: upper
   name: Golden Dragon
   crowns: 3589
   next: 350
-- level: 53
+  rarity: legendary
+- level: 73
   type: lower
   name: Marblellous
   crowns: 3939
   next: 561
-- level: 54
+  rarity: legendary
+- level: 74
   type: upper
   name: Marblellous
   crowns: 4500
-  next:
+  next: 500
+  rarity: legendary
+- level: 75
+  type: lower
+  name: Remarkable Medal
+  crowns: 5000
+  next: 500
+  rarity: legendary
+- level: 76
+  type: upper
+  name: Remarkable Medal
+  crowns: 5500
+  next: 500
+  rarity: legendary
+- level: 77
+  type: phrase
+  name: Farewell, friend
+  crowns: 6000
+  next: 500
+  rarity: legendary
+- level: 78
+  type: lower
+  name: Arcane Drake
+  crowns: 6500
+  next: 500
+  rarity: legendary
+- level: 79
+  type: emoticon
+  name: Arcane Drake
+  crowns: 7000
+  next: 500
+  rarity: legendary
+- level: 80
+  type: upper
+  name: Arcane Drake
+  crowns: 7500
+  next: 0
+  rarity: legendary
