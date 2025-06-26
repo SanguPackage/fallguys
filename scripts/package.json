@@ -1,0 +1,18 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "crown-ranks": "ts-node ./crown-ranks.ts"
+  },
+  "author": "Laoujin",
+  "license": "MIT",
+  "dependencies": {
+    "node-html-parser": "^7.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4"
+  }
+}
