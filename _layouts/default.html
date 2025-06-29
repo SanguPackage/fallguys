@@ -38,7 +38,7 @@
 
 
 
-    {%- assign description = site.description -%}
+    {%- assign description = page.description | default: site.description -%}
     {%- assign title = site.title -%}
     {%- if page.layout == 'level' -%}
         {%- assign title = "Fall Guys level: " | append: page.title -%}
