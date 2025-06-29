@@ -1,3 +1,13 @@
+- name: Flagbearer
+  youtube: cT8Obqbr-TM
+  time: '0:11'
+  season: 1
+
+- name: Bounce Podium
+  youtube: WM8CNUditEw
+  time: '0:14'
+  season: 1
+
 - name: Leap of Faith
   youtube: _wD8zv-cSTA
   time: "0:13"
@@ -24,6 +34,11 @@
 - name: Zero's Surprise
   youtube: VxsO-D3qlyE
   time: "0:17"
+  season: L6
+
+- name: Trapeze Artiste
+  youtube: 6i_FzohXIHc
+  time: '0:07'
   season: L6
 
 - name: Hooping Hotshot
