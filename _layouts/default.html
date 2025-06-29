@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.meta-description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="keywords" content="{{ site.meta-keywords | strip_html | normalize_whitespace | escape }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
@@ -36,6 +35,36 @@
     {% unless jekyll.environment == "production" %}
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     {% endunless %}
+
+
+
+    {%- assign description = site.description -%}
+    {%- assign title = site.title -%}
+    {%- if page.layout == 'level' -%}
+        {%- assign title = "Fall Guys level: " | append: page.title -%}
+        {%- assign description = "All the shortcuts, tips & tricks, strategies and more in the form of short video clips." -%}
+    {%- endif -%}
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="{{ description | strip }}" />
+    <meta property="og:description" content="{{ description | strip }}" />
+    <meta property="og:url" content="{{ '/' | absolute_url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="{{ description | strip }}" />
+    <meta property="twitter:title" content="{{ site.title }}" />
+    {%- if page.speedrun.youtube -%}
+        <meta property="og:video" content="https://www.youtube.com/watch?v={{ page.speedrun.youtube }}">
+        <meta property="og:video:width" content="426">
+        <meta property="og:video:height" content="240">
+    {%- else -%}
+        {%- assign picture = page.picture | default: 'img/main/levels.png' -%}
+        <meta property="og:image" itemprop="image" content="{{ picture | absolute_url }}">
+        <meta property="og:image:width" content="350">
+        <meta property="og:image:height" content="197">
+        <meta property="og:image:type" content="image/png">
+    {%- endif -%}
 
     <script src="{{site.baseurl}}/assets/js/crown-level-rewards.js"></script>
     <script src="{{site.baseurl}}/assets/js/levels.js"></script>
