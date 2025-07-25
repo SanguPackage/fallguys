@@ -902,7 +902,6 @@
   timeout: '01:40'
 
 - name: Cosmic Highway
-  vaulted: true
   exists: false
   type: race
   sort_score: 70
@@ -935,7 +934,6 @@
   timeout: '2:30'
 
 - name: Starchart
-  vaulted: true
   exists: false
   type: race
   sort_score: 60
