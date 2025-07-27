@@ -30,7 +30,7 @@ email: woutervs@hotmail.com
 
 
 # Blog
-github_data_url: https://github.com/SanguPackage/sangu-site/blob/master/fallguys/_posts
+github_data_url: https://github.com/SanguPackage/fallguys/tree/master/_posts
 collections:
   posts:
     output: true
