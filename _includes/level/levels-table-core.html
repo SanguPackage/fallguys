@@ -9,13 +9,13 @@
             </tr>
         </thead>
         <tbody>
-            {% assign levels = include.levels | sort: 'sort_score' | reverse %}
+            {% assign levels = include.levels | sort: 'name' %}
             {% for level in levels %}
                 {% include level/levels-table-rows.html level=level %}
             {% endfor %}
 
             {% if include.others.size > 0 %}
-                {% assign levels = include.others | sort: 'sort_score' | reverse %}
+                {% assign levels = include.others | sort: 'name' %}
                 {% for level in levels %}
                     {% include level/levels-table-rows.html level=level hidden=true %}
                 {% endfor %}
