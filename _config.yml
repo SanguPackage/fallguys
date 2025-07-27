@@ -1,27 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Fall Guys @ Sangu
-meta-description:
 meta-keywords: fallguys fall guys tips tricks shortcuts short movies crown level rewards
-name: fallguys
-description: > # this means to ignore newlines until "baseurl:"
-
-baseurl: "/fallguys" # the subpath of your site, e.g. /blog
-url: "https://sangu.be" # the base hostname & protocol for your site, e.g. https://example.com
-
+description: >
+  Short movies with all the Fall Guys shortcuts.
+  Overview of the crown level rewards.
+baseurl: "/fallguys"
+url: "https://sangu.be"
 
 
 # Social
@@ -44,12 +27,6 @@ collections:
 
 # Build settings
 markdown: kramdown
-
-# highlighter: We've implemented highlightjs manually
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-
 
 # https://github.com/jekyll/minima
 # bundle show minima
