@@ -889,7 +889,7 @@
   howto: Navigate the obstacles along this perilous racetrack and reach the finish!
   qualify: 70
   added: 1
-  timeout: ''
+  timeout: '1:30'
 
 - name: Volleyfall
   exists: true
