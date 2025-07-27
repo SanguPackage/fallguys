@@ -42,6 +42,8 @@ const result: Level[] = rows.map(row => {
 
     if (!existingLevels.includes(`- name: ${name}`)) {
         console.log(`Missing level: ${name}`);
+        // TODO get icon from cells[0]
+        // TODO: create _levels/data.name.html
     } else {
         return null;
     }

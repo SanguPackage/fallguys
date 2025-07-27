@@ -942,3 +942,103 @@
   qualify: 60
   added: 2
   timeout: '2:30'
+
+- name: Blastlantis
+  exists: false
+  type: survival
+  sort_score: 0
+  objective: Don't fall off!!
+  howto: Survive as long as possible by not falling off amid the ruined arena whilst throwing blast balls to knock off other players
+  qualify: 60
+  added: 3
+  timeout: '4:30'
+
+- name: Frantic Factory
+  exists: false
+  type: points
+  sort_score: 0
+  objective: Press lit buttons!
+  howto: Press the lit buttons to score points!
+  qualify: 70
+  added: 2
+  timeout: '5:00'
+
+- name: Hex-A-Terrestrial
+  exists: false
+  type: final
+  sort_score: 0
+  objective: Don't fall off!
+  howto: Floor pieces fall away temporarily when you stand on them - keep moving and survive longest to WIN the CROWN!
+  qualify: 1
+  added: 2
+  timeout: '5:00'
+
+- name: Hoop Chute
+  exists: false
+  type: points
+  sort_score: 0
+  objective: Score points!
+  howto: Use Jump and Dive to dive slide and slide through the hoops to score points
+  qualify: 60
+  added: 3
+  timeout: '3:00'
+
+- name: Hyperdrive Heroes
+  exists: false
+  type: survival
+  sort_score: 0
+  objective: Don't fall off!
+  howto: Avoid falling off the hoverboard and reach the finish!
+  qualify: ??
+  added: 2
+  timeout: '2:50'
+
+- name: Kraken Slam
+  exists: false
+  type: final
+  sort_score: 0
+  objective: Avoid the water!
+  howto: Avoid jumping on the patterned tiles to prevent Kraken Tentacles from appearing. Don't fall into the water!
+  qualify: 1
+  added: 3
+  timeout: '5:00'
+
+- name: Pixel Painters
+  exists: false
+  type: logic
+  sort_score: 0
+  objective: Copy the picture!
+  howto: Touch the floor tiles to light them up and copy the picture on the wall!
+  qualify: 60
+  added: 2
+  timeout: '3:00'
+
+- name: Space Race
+  exists: false
+  type: course
+  sort_score: 0
+  objective: Race to the finish!
+  howto: Navigate the Obstacles and race to the finish line!
+  qualify: 70
+  added: 2
+  timeout: '3:00'
+
+- name: Speed Slider
+  exists: false
+  type: course
+  sort_score: 0
+  objective: Race to the finish!
+  howto: Slide down the track and race to the finish line!
+  qualify: 70
+  added: 3
+  timeout: '2:45'
+
+- name: Tip Toe Finale
+  exists: false
+  type: final
+  sort_score: 0
+  objective: Grab the crown!
+  howto: Work together to race across the tiles to reach the crown first!
+  qualify: 1
+  added: 2
+  timeout: '5:00'
