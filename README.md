@@ -25,22 +25,4 @@ Fall Guys
 
 ## Deploy
 
-```ps1
-$env:JEKYLL_ENV = "production";
-bundle exec jekyll build;
-$env:JEKYLL_ENV = "development";
-```
-
-And upload with ftp client.
-
-
-## TODO
-
-- Crown Level Rewards 30-50 : SEeLLPy_zCQ
-
-Shortcuts need to be retired: Obsolete or Retired?
-Difficulty of a shortcut --> Badge + Filters
-
-Hide certain stuff by default
-- Like all "other stuff" links after 2 vids?
-- Hide more stuff by defaul on mobile
+Push to Github to deploy.
