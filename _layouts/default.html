@@ -60,10 +60,19 @@
         <meta property="og:video:height" content="240">
     {%- endif -%}
 
-    {%- assign picture = page.picture | default: 'img/main/levels.png' -%}
+    {%- assign picture = 'img/main/levels.png' -%}
+    {%- if page.layout == 'level' -%}
+        {%- assign levelName = page.title | downcase -%}
+        {%- assign levelName = levelName | replace: ' ', '-' -%}
+        {%- assign picture = 'img/levels/' | append: levelName -%}
+        {%- assign picture = picture | append: '.png' -%}
+
+        {%- assign imgWidth = 1000 -%}
+        {%- assign imgHeight = 563 -%}
+    {%- endif -%}
     <meta property="og:image" itemprop="image" content="{{ picture | absolute_url }}">
-    <meta property="og:image:width" content="350">
-    <meta property="og:image:height" content="197">
+    <meta property="og:image:width" content="{{ imgWidth | default: 350}}">
+    <meta property="og:image:height" content="{{ imgHeight | default: 197 }}">
     <meta property="og:image:type" content="image/png">
 
     <script src="{{site.baseurl}}/assets/js/crown-level-rewards.js"></script>
