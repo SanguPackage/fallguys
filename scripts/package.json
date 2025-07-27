@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "crown-ranks": "ts-node ./crown-ranks.ts"
+    "crown-ranks": "ts-node ./crown-ranks.ts",
+    "levels": "ts-node ./levels.ts"
   },
   "author": "Laoujin",
   "license": "MIT",
