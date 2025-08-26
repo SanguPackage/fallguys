@@ -697,7 +697,7 @@
   qualify: 1
   added: L1
   fallguystv: https://www.youtube.com/watch?v=JzdPuBWNdlQ
-  timeout: 5:00
+  timeout: '5:00'
 
 
 - name: Lost Temple
@@ -769,7 +769,6 @@
   timeout: '3:00'
 
 - name: Party Promenade
-  vaulted: true
   exists: true
   type: race
   sort_score: 50
@@ -780,7 +779,6 @@
   timeout: '5:00'
 
 - name: Pipe Dream
-  vaulted: true
   exists: true
   type: race
   sort_score: 60
