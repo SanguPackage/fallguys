@@ -498,5 +498,35 @@
   type: upper
   name: Arcane Drake
   crowns: 7500
+  next: 500
+  rarity: legendary
+- level: 81
+  type: lower
+  name: Gold & Purr-pule Stack
+  crowns: 8000
+  next: 500
+  rarity: legendary
+- level: 82
+  type: upper
+  name: Gold & Purr-pule Stack
+  crowns: 8500
+  next: 500
+  rarity: legendary
+- level: 83
+  type: lower
+  name: Golden Bean Snatcher
+  crowns: 9000
+  next: 500
+  rarity: legendary
+- level: 84
+  type: upper
+  name: Golden Bean Snatcher
+  crowns: 9500
+  next: 500
+  rarity: legendary
+- level: 85
+  type: upper
+  name: Crown of Renown
+  crowns: 10000
   next: 0
   rarity: legendary
