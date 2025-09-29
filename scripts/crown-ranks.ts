@@ -1,8 +1,10 @@
 import { parse } from 'node-html-parser';
-import { writeFileSync } from 'fs';
+import { writeFileSync, existsSync } from 'fs';
+
+const baseUrl = 'https://fallguysultimateknockout.fandom.com/';
 
 async function getCrownRanks() {
-    const response = await fetch('https://fallguysultimateknockout.fandom.com/wiki/Crown_Rank');
+    const response = await fetch(`${baseUrl}/wiki/Crown_Rank`);
     const html = await response.text();
     const root = parse(html);
     const table = root.querySelector('.table-progress-tracking');
@@ -16,6 +18,8 @@ async function getCrownRanks() {
         rarity: string;
         primary?: string;
         secondary?: string;
+        url: string;
+        typeUrl: string;
     }
 
     const colours = [
@@ -52,6 +56,8 @@ async function getCrownRanks() {
             crowns: +cells[skipColumns + 3].text,
             next: +cells[skipColumns + 4].text,
             rarity: cells[skipColumns + 5].text.trim().toLowerCase(),
+            url: baseUrl + cells[skipColumns + 1].querySelector('a').getAttribute('href'),
+            typeUrl: baseUrl + cells[skipColumns + 2].querySelector('a').getAttribute('href'),
         }
 
         if (type === 'colour') {
@@ -85,6 +91,42 @@ async function getCrownRanks() {
 
     writeFileSync('../_data/crownlevels.yml', yaml);
     console.log('crownlevels.yml was written');
+
+
+    console.log('Start downloading missing images');
+    result.filter(row => row.type !== 'colour' && row.type !== 'nickname').forEach(async row => {
+        const saveImgAsBase = `../img/crown-level-rewards/${row.type}-${row.name.toLowerCase().replace(/ /g, '-').replace(/,/g, '')}`;
+        const saveImg = saveImgAsBase + '.png';
+        const saveImgSm = saveImgAsBase + '-sm.png';
+        if (!existsSync(saveImg)) {
+            console.log(`Downloading BIG: ${row.name} (level: ${row.level})`);
+            const response = await fetch(row.url);
+            const html = await response.text();
+            const root = parse(html);
+            const image = root.querySelector('.pi-image img');
+            const imageUrl = image.getAttribute('src');
+            await downloadImage(imageUrl, saveImg);
+        }
+
+        if (!existsSync(saveImgSm)) {
+            console.log(`Need to download SM: ${row.name} (level: ${row.level})`);
+            console.log(`Do this manually at: ${row.typeUrl}`);
+            console.log(`Save as: ${saveImgSm}`);
+            console.log('-----');
+            // const response = await fetch(row.typeUrl);
+            // const html = await response.text();
+            // const root = parse(html);
+            // const image = root.querySelector(`td[data-sort-value='${row.name}'] img`);
+            // const imageUrl = image.getAttribute('src');
+            // await downloadImage(imageUrl, saveImg);
+        }
+    });
+}
+
+async function downloadImage(url: string, filepath: string) {
+    const response = await fetch(url);
+    const buffer = await response.arrayBuffer();
+    writeFileSync(filepath, Buffer.from(buffer));
 }
 
 getCrownRanks();
