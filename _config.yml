@@ -13,7 +13,7 @@ email: woutervs@hotmail.com
 
 
 # Blog
-github_data_url: https://github.com/SanguPackage/fallguys/tree/master/_posts
+github_data_url: https://github.com/SanguPackage/fallguys/tree/main/_posts
 collections:
   posts:
     output: true
