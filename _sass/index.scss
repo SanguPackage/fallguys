@@ -29,41 +29,6 @@
         --bs-gutter-x: 100px;
     }
 
-    .tournament-banner-col {
-        margin-bottom: 25px;
-    }
-
-    .tournament-banner {
-        display: inline-flex;
-        align-items: center;
-        gap: 14px;
-        padding: 14px 30px;
-        border-radius: 40px;
-        background: #FF5FA2;
-        border: 8px solid #E8348A;
-        box-shadow: 0 0 0 8px white;
-        color: white;
-        text-decoration: none;
-        font-family: TitanOne;
-        font-size: 20px;
-        transition: transform .15s ease-in-out;
-
-        &:hover {
-            color: white;
-            transform: scale(1.04);
-        }
-    }
-
-    .tournament-banner-crown {
-        font-size: 28px;
-        line-height: 1;
-    }
-
-    .tournament-banner-cta {
-        text-decoration: underline;
-        white-space: nowrap;
-    }
-
     .card {
         border-radius: 40px;
         background: #45DBF3;
